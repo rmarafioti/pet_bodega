@@ -91,11 +91,10 @@ main {
   animation: fadeIn 2s ease-in-out;
   width: 100%;
   min-height: 100vh;
-  padding: 6rem 1rem 6rem 1rem;
+  padding: 0rem 1rem 6rem 1rem;
 }
 
 section {
-  width: 800px;
   text-align: left;
   opacity: 0;
   transform: translateY(40px);

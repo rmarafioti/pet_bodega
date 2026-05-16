@@ -1,6 +1,6 @@
 "use client";
 
-import { heroPhoto } from "./_data/photos";
+import { heroPhoto, businessExterior } from "./_data/photos";
 import FadeInSection from "./_components/Fade_In_Section";
 import Responsive_Image_Layout from "./_components/Responsive_Image_Layout";
 import Contact_Form from "./_components/forms/Contact_Form";
@@ -11,17 +11,17 @@ export default function Home() {
   return (
     <main>
       <FadeInSection>
-        <h1>Landing Page</h1>
-        <h2>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet
-          consectetur adipiscing elit quisque faucibus.
-        </h2>
         <div className={styles.image_container}>
-          <Responsive_Image_Layout
-            photoData={heroPhoto}
-            /*className={styles.hero_photo}*/
-          />
+          <Responsive_Image_Layout photoData={heroPhoto} />
         </div>
+        <div className={styles.copy_section}>
+          <p>Come for the baths,</p>
+          <p>Stay for the vibes.</p>
+        </div>
+        <div className={styles.image_container}>
+          <Responsive_Image_Layout photoData={businessExterior} />
+        </div>
+
         <Contact_Form />
       </FadeInSection>
     </main>
