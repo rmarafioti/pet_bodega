@@ -5,7 +5,47 @@
 
 .copy_section {
     text-align: center;
-    padding: 6rem 0rem 6rem 0rem;
+    padding: 6rem 0rem 4rem 0rem;
+}
+
+.info_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info_header {
+    margin-bottom: 6rem;
+}
+
+.info_card {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+    margin-bottom: 4rem;
+}
+
+.info_card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.icon {
+    padding-right: 1rem;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.copy {
+    width: 460px;
+}
+
+#copy_section_blk {
+    background-color: var(--foreground);
+    color: var(--background);
 }
 
 @media (max-width: 800px) {
