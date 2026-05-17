@@ -1,7 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { heroPhoto, businessExterior, infoCards } from "./_data/photos";
+import {
+  heroPhoto,
+  businessExterior,
+  infoCards,
+  navBarDogOne,
+} from "./_data/photos";
 import FadeInSection from "./_components/Fade_In_Section";
 import Responsive_Image_Layout from "./_components/Responsive_Image_Layout";
 import Contact_Form from "./_components/forms/Contact_Form";
@@ -48,7 +53,17 @@ export default function Home() {
           <Responsive_Image_Layout photoData={businessExterior} />
         </div>
         <div className={styles.copy_section} id={styles.copy_section_blk}>
-          <h2 className={styles.info_header}>We have the best shit...</h2>
+          <div className={styles.info_headline}>
+            <h2 className={styles.info_header}>We have the best sh</h2>
+            <Image
+              src={navBarDogOne.src}
+              height={navBarDogOne.height}
+              width={navBarDogOne.width}
+              alt={navBarDogOne.alt}
+              className={styles.dog_icon}
+            />
+            <h2 className={styles.info_header}>t...</h2>
+          </div>
           <InfoCard />
         </div>
         <div className={styles.copy_section}>
