@@ -10,7 +10,8 @@
   --foreground: #171717;
   --dm_background: #3b3840;
 
-  --main-font: "Outfit", serif;
+  --main-font: "dinosaurBold", serif;
+  --copy-light: "rocGroteskLight", serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -70,9 +71,11 @@ a {
 nav {
   display: flex;
   flex-direction: row;
-  padding: 2rem 0rem 2rem 0rem;
-  align-items: center;
-  border-bottom: 1px solid lightgray;
+  justify-content: center;
+  background-color: var(--foreground);
+  padding: 4rem 0rem 4rem 0rem;
+  align-items: flex-start;
+  
 }
 
 footer {

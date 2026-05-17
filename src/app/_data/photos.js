@@ -1,3 +1,24 @@
+export const navBarDogOne = {
+  src: "https://res.cloudinary.com/dzpne110u/image/upload/v1778270978/pet_bodega/assets/bambino_dark_BG_nu03md.svg",
+  height: 210,
+  width: 99,
+  alt: "...",
+};
+
+export const navBarDogTwo = {
+  src: "https://res.cloudinary.com/dzpne110u/image/upload/v1778270977/pet_bodega/assets/lola_dark_BG_lwh5en.svg",
+  height: 192,
+  width: 189,
+  alt: "...",
+};
+
+export const boneIcon = {
+  src: "https://res.cloudinary.com/dzpne110u/image/upload/v1778270980/pet_bodega/assets/bone_dbxe9i.svg",
+  height: 42,
+  width: 7,
+  alt: "...",
+};
+
 export const heroPhoto = {
   alt: "Picture of a 1980s desktop computer with the words 'pc view' overlayed ontop of the image",
   desktop: {

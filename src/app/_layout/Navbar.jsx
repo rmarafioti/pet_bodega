@@ -2,9 +2,9 @@
 
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import Responsive_Image_Theme from "../_components/Responsive_Image_Theme";
-import { icons } from "../_data/photos";
+import Image from "next/image";
 import Link from "next/link";
+import { navBarDogOne, navBarDogTwo, boneIcon } from "../_data/photos";
 
 /* naming conventions to define responsive design*/
 import pc from "../_styling/navbar.module.css";
@@ -22,18 +22,53 @@ export default function Navbar() {
     setMenuOpen(!menuOpen);
   };
 
-  const links = [
+  /*const links = [
     { href: "/", label: "Home" },
     { href: "/featureOne", label: "One" },
     { href: "/featureTwo", label: "Two" },
     { href: "/featureThree", label: "Three" },
-  ];
+  ];*/
 
   return (
     <>
       <nav>
-        <Responsive_Image_Theme photoData={icons} className={pc.nav_icon} />
-        <div className={pc.link_container}>
+        <Image
+          src={navBarDogOne.src}
+          height={navBarDogOne.height}
+          width={navBarDogOne.width}
+          alt={navBarDogOne.alt}
+          className={pc.dog_icon}
+        />
+        <div className={pc.info_container}>
+          <p className={pc.title}>The Pet Bodega</p>
+          <div className={pc.information}>
+            <p>Established 2021</p>
+            <Image
+              src={boneIcon.src}
+              height={boneIcon.height}
+              width={boneIcon.width}
+              alt={boneIcon.alt}
+              className={pc.bone_icon}
+            />
+            <p>Mount Prospect, IL.</p>
+            <Image
+              src={boneIcon.src}
+              height={boneIcon.height}
+              width={boneIcon.width}
+              alt={boneIcon.alt}
+              className={pc.bone_icon}
+            />
+            <a href="tel:+18472228005">847.222.8005</a>
+          </div>
+        </div>
+        <Image
+          src={navBarDogTwo.src}
+          height={navBarDogTwo.height}
+          width={navBarDogTwo.width}
+          alt={navBarDogTwo.alt}
+          className={pc.dog_icon}
+        />
+        {/*<div className={pc.link_container}>
           {links
             .filter((link) => link.href)
             .map(({ href, label }) => (
@@ -41,7 +76,7 @@ export default function Navbar() {
                 {label}
               </Link>
             ))}
-        </div>
+        </div>*/}
 
         {/* mobile navigation menu below */}
         <div className={pc.mobile_nav}>
@@ -60,7 +95,7 @@ export default function Navbar() {
       </nav>
 
       {/* mobile menu */}
-      <menu
+      {/*<menu
         className={`${pc.menu} ${menuOpen ? pc.active : ""}`}
         aria-label="Mobile Navigation"
       >
@@ -76,7 +111,7 @@ export default function Navbar() {
               {label}
             </Link>
           ))}
-      </menu>
+      </menu>*/}
     </>
   );
 }

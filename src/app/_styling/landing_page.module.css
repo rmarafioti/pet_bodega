@@ -4,6 +4,8 @@
 }
 
 .copy_section {
+    font-family: var(--main-font);
+    text-transform: uppercase;
     text-align: center;
     padding: 6rem 0rem 4rem 0rem;
 }
