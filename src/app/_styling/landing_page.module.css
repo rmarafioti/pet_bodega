@@ -7,7 +7,11 @@
     font-family: var(--main-font);
     text-transform: uppercase;
     text-align: center;
-    padding: 6rem 0rem 4rem 0rem;
+    padding: 6rem 0rem 6rem 0rem;
+}
+
+#tag_line {
+    font-size: 48px;;
 }
 
 .info_section {

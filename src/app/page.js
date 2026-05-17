@@ -37,9 +37,12 @@ export default function Home() {
         <div className={styles.image_container}>
           <Responsive_Image_Layout photoData={heroPhoto} />
         </div>
-        <div className={styles.copy_section}>
-          <h1>Come for the baths,</h1>
-          <h1>Stay for the vibes.</h1>
+        <div className={styles.copy_section} id={styles.tag_line}>
+          <p>
+            Come for the baths,
+            <br />
+            Stay for the vibes.
+          </p>
         </div>
         <div className={styles.image_container}>
           <Responsive_Image_Layout photoData={businessExterior} />
