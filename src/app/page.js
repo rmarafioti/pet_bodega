@@ -6,6 +6,7 @@ import {
   businessExterior,
   infoCards,
   navBarDogOne,
+  dogMosaic,
 } from "./_data/photos";
 import FadeInSection from "./_components/Fade_In_Section";
 import Responsive_Image_Layout from "./_components/Responsive_Image_Layout";
@@ -38,42 +39,53 @@ function InfoCard() {
 export default function Home() {
   return (
     <main>
-      <FadeInSection>
-        <div className={styles.image_container}>
-          <Responsive_Image_Layout photoData={heroPhoto} />
+      {/*<FadeInSection>*/}
+      <div className={styles.image_container}>
+        <Responsive_Image_Layout photoData={heroPhoto} />
+      </div>
+      <div className={styles.copy_section} id={styles.tag_line}>
+        <p>
+          Come for the baths,
+          <br />
+          Stay for the vibes.
+        </p>
+      </div>
+      <div className={styles.image_container}>
+        <Responsive_Image_Layout photoData={businessExterior} />
+      </div>
+      <div className={styles.copy_section} id={styles.copy_section_blk}>
+        <div className={styles.info_headline}>
+          <h2 className={styles.info_header}>We have the best sh</h2>
+          <Image
+            src={navBarDogOne.src}
+            height={navBarDogOne.height}
+            width={navBarDogOne.width}
+            alt={navBarDogOne.alt}
+            className={styles.dog_icon}
+          />
+          <h2 className={styles.info_header}>t...</h2>
         </div>
-        <div className={styles.copy_section} id={styles.tag_line}>
-          <p>
-            Come for the baths,
-            <br />
-            Stay for the vibes.
-          </p>
-        </div>
-        <div className={styles.image_container}>
-          <Responsive_Image_Layout photoData={businessExterior} />
-        </div>
-        <div className={styles.copy_section} id={styles.copy_section_blk}>
-          <div className={styles.info_headline}>
-            <h2 className={styles.info_header}>We have the best sh</h2>
-            <Image
-              src={navBarDogOne.src}
-              height={navBarDogOne.height}
-              width={navBarDogOne.width}
-              alt={navBarDogOne.alt}
-              className={styles.dog_icon}
-            />
-            <h2 className={styles.info_header}>t...</h2>
-          </div>
-          <InfoCard />
-        </div>
-        <div className={styles.copy_section}>
-          <h3>@the.pet.bodgea</h3>
-        </div>
-        <div className={styles.copy_section} id={styles.copy_section_blk}>
-          <p>next section</p>
-        </div>
-        {/*<Contact_Form />*/}
-      </FadeInSection>
+        <InfoCard />
+      </div>
+      <div className={styles.copy_section} id={styles.ig_section}>
+        <a
+          href="https://www.instagram.com/the.pet.bodega/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.ig_link}
+        >
+          @the.pet.bodgea
+        </a>
+      </div>
+      <Image
+        src={dogMosaic.src}
+        height={dogMosaic.height}
+        width={dogMosaic.width}
+        alt={dogMosaic.alt}
+        className={styles.dog_mosaic}
+      />
+      {/*<Contact_Form />*/}
+      {/*</FadeInSection>*/}
     </main>
   );
 }

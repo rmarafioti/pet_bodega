@@ -1,62 +1,108 @@
 .image_container {
-    width: 100vw;
-    height: auto;
+  width: 100vw;
+  height: auto;
 }
 
 .copy_section {
-    font-family: var(--main-font);
-    text-transform: uppercase;
-    text-align: center;
-    padding: 6rem 0rem 6rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: var(--main-font);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 3rem 0rem 4rem 0rem;
+  width: 100vw;
 }
 
 #tag_line {
-    font-size: 48px;;
+  font-size: 68px;
 }
 
-.info_section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.info_headline {
+  display: flex;
+  justify-content: center;
 }
 
 .info_header {
-    margin-bottom: 6rem;
+  font-size: 78px;
+  margin-bottom: 6rem;
+}
+
+.dog_icon {
+  height: 80px;
+  width: auto;
+  margin-top: 1.5rem;
+}
+
+.info_section {
+  display: flex;
+  flex-direction: column;
+
+  width: 920px;
+  padding: 0rem 0rem 0rem 0rem;
 }
 
 .info_card {
-    display: flex;
-    text-align: left;
-    justify-content: space-between;
-    align-items: center;
-    width: 700px;
-    margin-bottom: 4rem;
+  display: flex;
+  text-align: left;
+  align-self: flex-start;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
 }
 
 .info_card:nth-child(even) {
   flex-direction: row-reverse;
+  align-self: flex-end;
 }
 
-.icon {
-    padding-right: 1rem;
+.info_card:nth-child(even) .icon {
+  margin-left: 1.5rem;
+}
+
+.info_card:nth-child(odd) .icon {
+  margin-right: 2rem;
 }
 
 .title {
-    font-weight: bold;
+  font-family: var(--copy-bold);
+  font-size: 28px;
+  margin-bottom: 0rem;
+  text-transform: none;
 }
 
 .copy {
-    width: 460px;
+  font-family: var(--copy-light);
+  text-transform: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.8;
+  width: 460px;
 }
 
 #copy_section_blk {
-    background-color: var(--foreground);
-    color: var(--background);
+  background-color: var(--foreground);
+  color: var(--background);
+}
+
+#ig_section {
+  padding: 2rem 0rem 3rem 0rem;
+}
+
+.ig_link {
+  font-size: 48px;
+}
+
+.dog_mosaic {
+  width: 100vw;
+  height: auto;
 }
 
 @media (max-width: 800px) {
-    .image_container {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
+  .image_container {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 }
