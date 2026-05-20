@@ -16,23 +16,25 @@ import styles from "./_styling/landing_page.module.css";
 
 function InfoCard() {
   return (
-    <div className={styles.info_section}>
-      {infoCards.map(({ id, header, copy, icon }) => (
-        <div key={id} className={styles.info_card}>
-          <Image
-            src={icon.src}
-            height={icon.height}
-            width={icon.width}
-            alt={icon.alt}
-            className={styles.icon}
-          />
-          <div className={styles.copy}>
-            <p className={styles.title}>{header}</p>
-            <p>{copy}</p>
+    <FadeInSection>
+      <div className={styles.info_section}>
+        {infoCards.map(({ id, header, copy, icon }) => (
+          <div key={id} className={styles.info_card}>
+            <Image
+              src={icon.src}
+              height={icon.height}
+              width={icon.width}
+              alt={icon.alt}
+              className={styles.icon}
+            />
+            <div className={styles.copy}>
+              <p className={styles.title}>{header}</p>
+              <p>{copy}</p>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </FadeInSection>
   );
 }
 

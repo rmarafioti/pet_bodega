@@ -4,6 +4,7 @@ import { Outfit } from "next/font/google";
 
 import { useState, useEffect } from "react";
 
+import DogIcons from "./DogIcons";
 import Navbar from "../_layout/Navbar";
 import Footer from "../_layout/Footer";
 import Access_Menu from "../_components/accessibility/Access_Menu";
@@ -63,12 +64,13 @@ export default function AppWrapper({ children }) {
   return (
     <div>
       <Navbar />
-      <Access_Menu
+      <DogIcons />
+      {/*<Access_Menu
         accessibility={accessibility}
         toggleSetting={toggleSetting}
         adjustFontSize={adjustFontSize}
         resetAccessibility={resetAccessibility}
-      />
+      />*/}
       <article
         className={`
           appContainer

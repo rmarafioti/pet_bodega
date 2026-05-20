@@ -1,0 +1,8 @@
+.dog_icon_container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    z-index: 999;
+}

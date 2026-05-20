@@ -11,8 +11,8 @@ const rocGroteskLight = localFont({
   src: "/_fonts/RocGrotesk-Light.otf",
 });
 
-const rocGroteskBold = localFont({
-  src: "/_fonts/RocGrotesk-Bold.otf",
+const rocGroteskMedium = localFont({
+  src: "/_fonts/RocGrotesk-Medium.otf",
 });
 
 export const metadata = {
@@ -26,7 +26,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${dinosaurBold} ${rocGroteskLight} ${rocGroteskBold}`}>
+      <body
+        className={`${dinosaurBold} ${rocGroteskLight} ${rocGroteskMedium}`}
+      >
         <App_Wrapper>{children}</App_Wrapper>
       </body>
     </html>
