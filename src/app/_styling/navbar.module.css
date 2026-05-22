@@ -24,10 +24,22 @@
   background: lightgray;
   border-bottom: none;
 }*/
+
+.base_navbar_container {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(23, 23, 23, 0.95);
+  padding: 2rem 0rem 2rem 0rem;
+  align-items: flex-start;
+  z-index: 1000;
+  width: 100vw;
+  display: none;
+}
+
 .dog_icon {
-height: 100px;
-width: auto;
-margin-right: 1.5rem;
+  height: 100px;
+  width: auto;
+  margin-right: 1.5rem;
 }
 
 .title {
@@ -52,7 +64,7 @@ margin-right: 1.5rem;
   color: var(--background);
 }
 
-.information > p, 
+.information > p,
 .information > a {
   font-size: 20px;
   font-family: var(--copy-light);
@@ -60,6 +72,21 @@ margin-right: 1.5rem;
 
 .bone_icon {
   margin: 0rem 1rem 0rem 1rem;
+}
+
+.small_nav_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(23, 23, 23, 0.95);
+  padding: 1rem 0rem 1rem 0rem;
+  width: 100vw;
+}
+
+.navbar_both_dogs {
+  height: 80px;
+  width: auto;
+  margin-right: 2rem;
 }
 
 .mobile_nav {

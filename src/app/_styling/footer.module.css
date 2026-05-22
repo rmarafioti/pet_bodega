@@ -1,5 +1,24 @@
 .footer_banner {
     height: 186px;
     width: auto;
+}
+
+.info_container {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    padding: 2rem 0rem 2rem 0rem;
     margin-bottom: 2rem;
+}
+
+.info > p {
+    font-size: 28px;
+    margin-left: 16rem;
+}
+
+.hours > p {
+    font-size: 20px;
+    margin-right: 18rem;
 }

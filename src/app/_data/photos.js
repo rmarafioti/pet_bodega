@@ -19,6 +19,13 @@ export const boneIcon = {
   alt: "...",
 };
 
+export const navBarBothDogs = {
+  src: "https://res.cloudinary.com/dzpne110u/image/upload/v1779304324/pet_bodega/assets/overlap_dogs_dark_BG_fewhja.svg",
+  height: 593,
+  width: 672,
+  alt: "...",
+};
+
 export const heroPhoto = {
   alt: "Picture of a 1980s desktop computer with the words 'pc view' overlayed ontop of the image",
   desktop: {
@@ -94,14 +101,18 @@ export const infoCards = [
   },
 ];
 
-export const icons = {
-  alt: "website icon and home page button",
-  src_light:
-    "https://res.cloudinary.com/dzpne110u/image/upload/v1761257615/wedding_website/icons/monogram_maroon_vmlyu6.svg",
-  src_dark:
-    "https://res.cloudinary.com/dzpne110u/image/upload/v1761257555/wedding_website/icons/monogram_blush_xospub.svg",
-  height: 118,
-  width: 179,
+export const dogBookEndOne = {
+  src: "https://res.cloudinary.com/dzpne110u/image/upload/v1779304324/pet_bodega/assets/bambino_filled_in_snw474.svg",
+  height: 857,
+  width: 406,
+  alt: "...",
+};
+
+export const dogBookEndTwo = {
+  src: "https://res.cloudinary.com/dzpne110u/image/upload/v1779304324/pet_bodega/assets/lola_filled_in_mbrt15.svg",
+  height: 770,
+  width: 784,
+  alt: "...",
 };
 
 export const footerImage = {

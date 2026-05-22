@@ -62,7 +62,7 @@ export default function AppWrapper({ children }) {
   };
 
   return (
-    <div>
+    <>
       <Navbar />
       <DogIcons />
       {/*<Access_Menu
@@ -87,6 +87,6 @@ export default function AppWrapper({ children }) {
         {children}
       </article>
       <Footer />
-    </div>
+    </>
   );
 }

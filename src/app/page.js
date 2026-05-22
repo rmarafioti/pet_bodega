@@ -10,7 +10,6 @@ import {
 } from "./_data/photos";
 import FadeInSection from "./_components/Fade_In_Section";
 import Responsive_Image_Layout from "./_components/Responsive_Image_Layout";
-import Contact_Form from "./_components/forms/Contact_Form";
 
 import styles from "./_styling/landing_page.module.css";
 
@@ -41,7 +40,6 @@ function InfoCard() {
 export default function Home() {
   return (
     <main>
-      {/*<FadeInSection>*/}
       <div className={styles.image_container}>
         <Responsive_Image_Layout photoData={heroPhoto} />
       </div>
@@ -86,8 +84,6 @@ export default function Home() {
         alt={dogMosaic.alt}
         className={styles.dog_mosaic}
       />
-      {/*<Contact_Form />*/}
-      {/*</FadeInSection>*/}
     </main>
   );
 }
