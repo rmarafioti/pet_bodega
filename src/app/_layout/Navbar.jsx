@@ -49,7 +49,7 @@ export default function Navbar() {
       <nav>
         <div
           className={pc.base_navbar_container}
-          style={{ display: isScrolled ? "none" : "flex" }}
+          style={isScrolled ? { display: "none" } : {}}
         >
           <Image
             src={navBarDogOne.src}
@@ -101,7 +101,7 @@ export default function Navbar() {
         {/* smaller nav bar for desktop view */}
         <div
           className={pc.small_nav_container}
-          style={{ display: isScrolled ? "flex" : "none" }}
+          style={!isScrolled ? { display: "none" } : {}}
         >
           <Image
             src={navBarBothDogs.src}

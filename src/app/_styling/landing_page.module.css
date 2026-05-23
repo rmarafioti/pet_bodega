@@ -1,4 +1,5 @@
-.image_container {
+.hero_photo,
+.exterior_photo {
   width: 100vw;
   height: auto;
 }
@@ -40,7 +41,6 @@
   flex-direction: column;
 
   width: 800px;
-  padding: 0rem 0rem 0rem 0rem;
 }
 
 .info_card {
@@ -54,6 +54,7 @@
 
 .icon {
   width: 160px;
+  height: auto;
 }
 
 .info_card:nth-child(even) {
@@ -72,7 +73,6 @@
 .title {
   font-family: var(--copy-bold);
   font-size: 28px;
-  margin-bottom: 0rem;
   text-transform: none;
 }
 
@@ -104,9 +104,52 @@
   height: auto;
 }
 
-@media (max-width: 800px) {
-  .image_container {
-    width: 100%;
+@media (max-width: 667px) {
+  #tag_line > p,
+  .ig_link {
+    font-size: 28px;
+  }
+
+  .info_header {
+    font-size: 26px;
+  }
+
+  .dog_icon {
+    height: 60px;
+    width: auto;
+    margin-top: 0rem;
+  }
+
+  .info_section {
+    width: 100vw;
+  }
+
+  .info_card {
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+  }
+
+  .info_card:nth-child(even) {
+    flex-direction: column;
+    align-self: flex-start;
+  }
+
+  .copy {
+    width: 100vw;
+    padding: 0rem 1rem 0rem 1rem;
+    line-height: 1.4;
+  }
+
+  .icon,
+  .info_card:nth-child(even) .icon {
+    width: 120px;
+    margin-left: 1rem;
     margin-bottom: 1rem;
+  }
+
+  .info_card:nth-child(odd) .icon {
+    margin-right: 0rem;
   }
 }

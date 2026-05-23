@@ -40,9 +40,14 @@ function InfoCard() {
 export default function Home() {
   return (
     <main>
-      <div className={styles.image_container}>
-        <Responsive_Image_Layout photoData={heroPhoto} />
-      </div>
+      <Image
+        src={heroPhoto.src}
+        height={heroPhoto.height}
+        width={heroPhoto.width}
+        alt={heroPhoto.alt}
+        className={styles.hero_photo}
+      />
+
       <div className={styles.copy_section} id={styles.tag_line}>
         <p>
           Come for the baths,
@@ -50,9 +55,13 @@ export default function Home() {
           Stay for the vibes.
         </p>
       </div>
-      <div className={styles.image_container}>
-        <Responsive_Image_Layout photoData={businessExterior} />
-      </div>
+      <Image
+        src={businessExterior.src}
+        height={businessExterior.height}
+        width={businessExterior.width}
+        alt={businessExterior.alt}
+        className={styles.exterior_photo}
+      />
       <div className={styles.copy_section} id={styles.copy_section_blk}>
         <div className={styles.info_headline}>
           <h2 className={styles.info_header}>We have the best sh</h2>

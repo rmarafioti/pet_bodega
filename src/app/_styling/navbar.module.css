@@ -33,7 +33,6 @@
   align-items: flex-start;
   z-index: 1000;
   width: 100vw;
-  display: none;
 }
 
 .dog_icon {
@@ -98,7 +97,9 @@
 }
 
 @media (max-width: 667px) {
-  .nav_menu {
+  .nav_menu,
+  .base_navbar_container,
+  .small_nav_container {
     display: none;
   }
 
