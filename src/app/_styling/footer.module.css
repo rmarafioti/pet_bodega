@@ -4,6 +4,7 @@
 }
 
 .info_container {
+  font-family: var(--copy-light);
   display: flex;
   justify-content: space-around;
   width: 100vw;

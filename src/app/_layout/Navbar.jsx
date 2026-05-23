@@ -115,17 +115,25 @@ export default function Navbar() {
 
         {/* mobile navigation menu below */}
         <div className={pc.mobile_nav}>
-          <Link href="/" className={pc.nav_link}>
+          <Image
+            src={navBarBothDogs.src}
+            height={navBarBothDogs.height}
+            width={navBarBothDogs.width}
+            alt={navBarBothDogs.alt}
+            className={pc.navbar_both_dogs}
+          />
+          <p>Book Now</p>
+          {/*<Link href="/" className={pc.nav_link}>
             Home
-          </Link>
+          </Link>*/}
           {/*hamburger menu*/}
-          <div id={mobile.hamMenuContainer} onClick={toggleMenu}>
+          {/*<div id={mobile.hamMenuContainer} onClick={toggleMenu}>
             <div
               className={`${mobile.menuButtonBurger} ${
                 menuOpen ? mobile.open : ""
               }`}
             ></div>
-          </div>
+          </div>*/}
         </div>
       </nav>
 

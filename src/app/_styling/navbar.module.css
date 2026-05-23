@@ -104,13 +104,13 @@
   }
 
   .mobile_nav {
-    position: fixed;
-    background-color: var(--background);
+    background-color: var(--foreground);
+    color: var(--background);
     display: flex;
-    width: 100%;
+    width: 100vw;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 1rem 2rem 1rem;
+    padding: 1rem;
     z-index: 1000;
   }
 
