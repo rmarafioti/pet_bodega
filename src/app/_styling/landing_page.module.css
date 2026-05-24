@@ -23,6 +23,15 @@
 .info_headline {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.best_sh {
+  display: flex;
+}
+
+#word_space {
+  margin-left: 1rem;
 }
 
 .info_header {
@@ -110,14 +119,25 @@
     font-size: 28px;
   }
 
+  .info_headline {
+  flex-direction: column;
+  text-align: left;
+}
+
   .info_header {
-    font-size: 26px;
+    font-size: 48px;
+    margin-bottom: 0rem;
+  }
+
+  .best_sh {
+    display: flex;
+    margin-bottom: 4rem;
   }
 
   .dog_icon {
     height: 60px;
     width: auto;
-    margin-top: 0rem;
+    margin-top: .5rem;
   }
 
   .info_section {

@@ -16,11 +16,27 @@ export default function Footer() {
         className={styles.footer_banner}
       />
       <div className={styles.info_container}>
-        <div className={styles.info}>
-          <p>The Pet Bodega</p>
-          <p>109 E Prospect Ave, Mt Prospect, IL 60056</p>
-          <p>(847) 222-8005</p>
-          <p>@the.pet.bodega</p>
+        <div className={styles.links}>
+          <p className={styles.name}>The Pet Bodgea</p>
+          <a
+            href="https://share.google/NzzMfuacDRT21yZvV"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.google_link}
+          >
+            109 E Prospect Ave, Mt Prospect, IL 60056
+          </a>
+          <a href="tel:+18472228005" className={styles.phone_number}>
+            847.222.8005
+          </a>
+          <a
+            href="https://www.instagram.com/the.pet.bodega/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.ig_link}
+          >
+            @the.pet.bodgea
+          </a>
         </div>
         <div className={styles.hours}>
           <p>Thurs: 9AM - 7PM</p>

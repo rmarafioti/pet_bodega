@@ -122,7 +122,11 @@ export default function Navbar() {
             alt={navBarBothDogs.alt}
             className={pc.navbar_both_dogs}
           />
-          <p>Book Now</p>
+          <button>
+            <a href="tel:+18472228005" className={pc.book_now}>
+              BOOK NOW
+            </a>
+          </button>
           {/*<Link href="/" className={pc.nav_link}>
             Home
           </Link>*/}

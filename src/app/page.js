@@ -64,15 +64,20 @@ export default function Home() {
       />
       <div className={styles.copy_section} id={styles.copy_section_blk}>
         <div className={styles.info_headline}>
-          <h2 className={styles.info_header}>We have the best sh</h2>
-          <Image
-            src={navBarDogOne.src}
-            height={navBarDogOne.height}
-            width={navBarDogOne.width}
-            alt={navBarDogOne.alt}
-            className={styles.dog_icon}
-          />
-          <h2 className={styles.info_header}>t...</h2>
+          <h2 className={styles.info_header}>We have the</h2>
+          <div className={styles.best_sh}>
+            <h2 className={styles.info_header} id={styles.word_space}>
+              best sh
+            </h2>
+            <Image
+              src={navBarDogOne.src}
+              height={navBarDogOne.height}
+              width={navBarDogOne.width}
+              alt={navBarDogOne.alt}
+              className={styles.dog_icon}
+            />
+            <h2 className={styles.info_header}>t...</h2>
+          </div>
         </div>
         <InfoCard />
       </div>

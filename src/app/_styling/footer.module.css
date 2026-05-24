@@ -14,9 +14,17 @@
   margin-bottom: 2rem;
 }
 
-.info > p {
-  font-size: 28px;
+.links {
+  display: flex;
+  flex-direction: column;
   margin-left: 16rem;
+}
+
+.ig_link,
+.phone_number,
+.google_link,
+.name {
+  font-size: 28px;
 }
 
 .hours > p {
@@ -40,6 +48,11 @@
   .info {
     margin-bottom: 2rem;
   }
+
+  .links {
+  margin-left: 0rem;
+  margin-bottom: 2rem;
+}
 
   .info > p {
     font-size: 20px;
