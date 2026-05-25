@@ -9,6 +9,8 @@ import {
   navBarDogTwo,
   boneIcon,
   navBarBothDogs,
+  navBarMobileDogOne,
+  navBarMobileDogTwo,
 } from "../_data/photos";
 
 /* naming conventions to define responsive design*/
@@ -115,13 +117,22 @@ export default function Navbar() {
 
         {/* mobile navigation menu below */}
         <div className={pc.mobile_nav}>
-          <Image
-            src={navBarBothDogs.src}
-            height={navBarBothDogs.height}
-            width={navBarBothDogs.width}
-            alt={navBarBothDogs.alt}
-            className={pc.navbar_both_dogs}
-          />
+          <div>
+            <Image
+              src={navBarMobileDogTwo.src}
+              height={navBarMobileDogTwo.height}
+              width={navBarMobileDogTwo.width}
+              alt={navBarMobileDogTwo.alt}
+              className={pc.navbar_mobile_dog_one}
+            />
+            {/*<Image
+              src={navBarMobileDogOne.src}
+              height={navBarMobileDogOne.height}
+              width={navBarMobileDogOne.width}
+              alt={navBarMobileDogOne.alt}
+              className={pc.navbar_mobile_dog_two}
+            />*/}
+          </div>
           <button>
             <a href="tel:+18472228005" className={pc.book_now}>
               BOOK NOW

@@ -26,18 +26,46 @@ export const navBarBothDogs = {
   alt: "...",
 };
 
+export const navBarMobileDogOne = {
+  src: "https://res.cloudinary.com/dzpne110u/image/upload/v1779634090/pet_bodega/assets/pattern%20icons/lola_head_darkBG_aoi6xv.svg",
+  height: 126,
+  width: 220,
+  alt: "...",
+};
+
+export const navBarMobileDogTwo = {
+  src: "https://res.cloudinary.com/dzpne110u/image/upload/v1779634088/pet_bodega/assets/pattern%20icons/bambino_head_darkBG_tr87as.svg",
+  height: 155,
+  width: 156,
+  alt: "...",
+};
+
 export const heroPhoto = {
   alt: "...",
-  src: "https://res.cloudinary.com/dzpne110u/image/upload/v1778270977/pet_bodega/assets/interior_FPO_zqwbpi.jpg",
-  height: 447,
-  width: 1440,
+  desktop: {
+    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1778270977/pet_bodega/assets/interior_FPO_zqwbpi.jpg",
+    height: 447,
+    width: 1440,
+  },
+  mobile: {
+    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1779639373/pet_bodega/assets/interior_mobile_u1fj3u.png",
+    height: 447,
+    width: 528,
+  },
 };
 
 export const businessExterior = {
   alt: "...",
-  src: "https://res.cloudinary.com/dzpne110u/image/upload/v1778270976/pet_bodega/assets/exterior_FPO_ayypd5.jpg",
-  height: 447,
-  width: 1440,
+  desktop: {
+    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1778270976/pet_bodega/assets/exterior_FPO_ayypd5.jpg",
+    height: 447,
+    width: 1440,
+  },
+  mobile: {
+    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1779639379/pet_bodega/assets/exterior_mobile_t3cpis.png",
+    height: 447,
+    width: 528,
+  },
 };
 
 export const infoCards = [

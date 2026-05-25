@@ -88,6 +88,16 @@
   margin-right: 2rem;
 }
 
+.navbar_mobile_dog_one {
+  height: 70px;
+  width: auto;
+}
+
+.navbar_mobile_dog_two {
+  height: 60px;
+  width: auto;
+}
+
 .mobile_nav {
   display: none;
 }
@@ -110,7 +120,7 @@
     width: 100vw;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: .5rem 1rem .5rem 1rem;
     z-index: 1000;
   }
 

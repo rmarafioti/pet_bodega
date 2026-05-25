@@ -12,6 +12,19 @@
   top: 260px;
 }
 
+@media (min-width: 1600px) {
+.dog_icon_left,
+.dog_icon_right {
+  position: fixed;
+  height: 360px;
+  width: auto;
+  top: 400px;
+  z-index: 1001;
+}
+
+}
+
+
 @media (max-width: 667px) {
   .dog_icon_left,
   .dog_icon_right {
