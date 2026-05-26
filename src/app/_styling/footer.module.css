@@ -64,3 +64,9 @@
     margin-right: 0rem;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .footer_banner {
+    background-color: var(--foreground);
+  }
+}

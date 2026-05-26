@@ -100,6 +100,13 @@
   color: var(--background);
 }
 
+@media (prefers-color-scheme: dark) {
+  #copy_section_blk {
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+}
+
 #ig_section {
   padding: 2rem 0rem 3rem 0rem;
 }
@@ -120,9 +127,9 @@
   }
 
   .info_headline {
-  flex-direction: column;
-  text-align: left;
-}
+    flex-direction: column;
+    text-align: left;
+  }
 
   .info_header {
     font-size: 48px;
@@ -137,7 +144,7 @@
   .dog_icon {
     height: 60px;
     width: auto;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
   }
 
   .info_section {

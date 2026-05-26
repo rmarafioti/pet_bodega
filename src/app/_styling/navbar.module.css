@@ -63,6 +63,13 @@
   color: var(--background);
 }
 
+@media (prefers-color-scheme: dark) {
+  .information,
+  .title {
+    color: var(--foreground);
+  }
+}
+
 .information > p,
 .information > a {
   font-size: 20px;
@@ -120,7 +127,7 @@
     width: 100vw;
     align-items: center;
     justify-content: space-between;
-    padding: .5rem 1rem .5rem 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     z-index: 1000;
   }
 
