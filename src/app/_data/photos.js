@@ -43,7 +43,7 @@ export const navBarMobileDogTwo = {
 export const heroPhoto = {
   alt: "...",
   desktop: {
-    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1778270977/pet_bodega/assets/interior_FPO_zqwbpi.jpg",
+    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1781476464/interior_v2_thxacu.jpg",
     height: 447,
     width: 1440,
   },
@@ -122,23 +122,23 @@ export const infoCards = [
 ];
 
 export const dogBookEndOne = {
-  src: "https://res.cloudinary.com/dzpne110u/image/upload/v1779304324/pet_bodega/assets/bambino_filled_in_snw474.svg",
-  height: 857,
-  width: 406,
+  src: "https://res.cloudinary.com/dzpne110u/image/upload/v1780937548/pet_bodega/assets/6-8-26/floating_dog_bambino_afwz3q.svg",
+  height: 341,
+  width: 156,
   alt: "...",
 };
 
 export const dogBookEndTwo = {
-  src: "https://res.cloudinary.com/dzpne110u/image/upload/v1779304324/pet_bodega/assets/lola_filled_in_mbrt15.svg",
-  height: 770,
-  width: 784,
+  src: "https://res.cloudinary.com/dzpne110u/image/upload/v1780937548/pet_bodega/assets/6-8-26/floating_dog_lola_dr3z4a.svg",
+  height: 314,
+  width: 307,
   alt: "...",
 };
 
 export const footerImage = {
-  src: "https://res.cloudinary.com/dzpne110u/image/upload/v1779117497/pet_bodega/assets/5-18-26/footer_vuz74y.svg",
-  height: 484,
-  width: 6621,
+  src: "https://res.cloudinary.com/dzpne110u/image/upload/v1780937547/pet_bodega/assets/6-8-26/2box_header_ez2a1p.svg",
+  height: 124,
+  width: 2560,
   alt: "...",
 };
 

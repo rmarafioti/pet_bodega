@@ -44,9 +44,9 @@ export default function Home() {
       <Responsive_Image_Layout photoData={heroPhoto} />
       <div className={styles.copy_section} id={styles.tag_line}>
         <p>
-          Come for the baths,
+          Premium Food, Supplies,
           <br />
-          Stay for the vibes.
+          and Grooming For Your Pup
         </p>
       </div>
       <Responsive_Image_Layout photoData={businessExterior} />
@@ -69,7 +69,7 @@ export default function Home() {
         </div>
         <InfoCard />
       </div>
-      <div className={styles.copy_section} id={styles.ig_section}>
+      {/*<div className={styles.copy_section} id={styles.ig_section}>
         <a
           href="https://www.instagram.com/the.pet.bodega/"
           target="_blank"
@@ -78,7 +78,7 @@ export default function Home() {
         >
           @the.pet.bodgea
         </a>
-      </div>
+      </div>*/}
       <Image
         src={dogMosaic.src}
         height={dogMosaic.height}

@@ -12,12 +12,14 @@
   font-family: var(--main-font);
   text-transform: uppercase;
   text-align: center;
-  padding: 3rem 0rem 4rem 0rem;
+  padding: 4rem 0rem 4rem 0rem;
   width: 100vw;
 }
 
 #tag_line {
-  font-size: 68px;
+  font-family: var(--copy-bold);
+  font-size: 48px;
+  text-transform: none;
 }
 
 .info_headline {
