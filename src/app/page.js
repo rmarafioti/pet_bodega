@@ -17,7 +17,7 @@ function InfoCard() {
   return (
     <FadeInSection>
       <div className={styles.info_section}>
-        {infoCards.map(({ id, header, copy, icon }) => (
+        {infoCards.map(({ id, header, copy, copy_two, icon }) => (
           <div key={id} className={styles.info_card}>
             <Image
               src={icon.src}
@@ -29,6 +29,7 @@ function InfoCard() {
             <div className={styles.copy}>
               <p className={styles.title}>{header}</p>
               <p>{copy}</p>
+              <p className={styles.copy_two}>{copy_two}</p>
             </div>
           </div>
         ))}

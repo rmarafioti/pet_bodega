@@ -57,11 +57,12 @@
   text-align: left;
   align-self: flex-start;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 4rem;
 }
 
 .icon {
+  margin-top: 1rem;
   width: 160px;
   height: auto;
 }
@@ -93,6 +94,10 @@
   justify-content: center;
   line-height: 1.8;
   width: 460px;
+}
+
+.copy_two {
+  margin-top: 2rem;
 }
 
 #copy_section_blk {
