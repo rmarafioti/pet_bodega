@@ -107,13 +107,6 @@
   color: var(--background);
 }
 
-@media (prefers-color-scheme: dark) {
-  #copy_section_blk {
-    background-color: var(--background);
-    color: var(--foreground);
-  }
-}
-
 #ig_section {
   padding: 2rem 0rem 3rem 0rem;
 }
