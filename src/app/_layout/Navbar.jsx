@@ -5,11 +5,11 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import {
-  navBarDogOne,
-  navBarDogTwo,
+  dogBookEndOne,
+  dogBookEndTwo,
   boneIcon,
-  navBarBothDogs,
-  navBarMobileDogOne,
+  two_box_header,
+  one_box_header,
   navBarMobileDogTwo,
 } from "../_data/photos";
 
@@ -39,12 +39,12 @@ export default function Navbar() {
     setMenuOpen(!menuOpen);
   };
 
-  /*const links = [
-    { href: "/", label: "Home" },
-    { href: "/featureOne", label: "One" },
-    { href: "/featureTwo", label: "Two" },
-    { href: "/featureThree", label: "Three" },
-  ];*/
+  const links = [
+    /*{ href: "/", label: "Home" },*/
+    { href: "/featureOne", label: "about us" },
+    { href: "/featureTwo", label: "meet our team" },
+    { href: "/featureThree", label: "contact us" },
+  ];
 
   return (
     <>
@@ -53,51 +53,62 @@ export default function Navbar() {
           className={pc.base_navbar_container}
           style={isScrolled ? { display: "none" } : {}}
         >
-          <Image
-            src={navBarDogOne.src}
-            height={navBarDogOne.height}
-            width={navBarDogOne.width}
-            alt={navBarDogOne.alt}
-            className={pc.dog_icon}
-          />
-          <div className={pc.info_container}>
-            <p className={pc.title}>The Pet Bodega</p>
-            <div className={pc.information}>
-              <p>Established 2021</p>
-              <Image
-                src={boneIcon.src}
-                height={boneIcon.height}
-                width={boneIcon.width}
-                alt={boneIcon.alt}
-                className={pc.bone_icon}
-              />
-              <p>Mount Prospect, IL.</p>
-              <Image
-                src={boneIcon.src}
-                height={boneIcon.height}
-                width={boneIcon.width}
-                alt={boneIcon.alt}
-                className={pc.bone_icon}
-              />
-              <a href="tel:+18472228005">847.222.8005</a>
+          <div className={pc.header}>
+            <Image
+              src={two_box_header.src}
+              height={two_box_header.height}
+              width={two_box_header.width}
+              alt={two_box_header.alt}
+              className={pc.two_box_header}
+            />
+            <Image
+              src={dogBookEndOne.src}
+              height={dogBookEndOne.height}
+              width={dogBookEndOne.width}
+              alt={dogBookEndOne.alt}
+              className={pc.dog_icon_left}
+            />
+            <div className={pc.info_container}>
+              <p className={pc.title}>The Pet Bodega</p>
+              <p className={pc.information}>
+                Grooming in Mount Prospect, IL Since 2021
+              </p>
             </div>
+            <Image
+              src={dogBookEndTwo.src}
+              height={dogBookEndTwo.height}
+              width={dogBookEndTwo.width}
+              alt={dogBookEndTwo.alt}
+              className={pc.dog_icon}
+            />
+            <Image
+              src={two_box_header.src}
+              height={two_box_header.height}
+              width={two_box_header.width}
+              alt={two_box_header.alt}
+              className={pc.two_box_header}
+            />
           </div>
-          <Image
-            src={navBarDogTwo.src}
-            height={navBarDogTwo.height}
-            width={navBarDogTwo.width}
-            alt={navBarDogTwo.alt}
-            className={pc.dog_icon}
-          />
-          {/*<div className={pc.link_container}>
-          {links
-            .filter((link) => link.href)
-            .map(({ href, label }) => (
-              <Link key={href} href={href} className={pc.nav_link}>
-                {label}
-              </Link>
-            ))}
-        </div>*/}
+          <div className={pc.link_container}>
+            {links
+              .filter((link) => link.href)
+              .map(({ href, label }, index, array) => (
+                <>
+                  <Link key={href} href={href} className={pc.nav_link}>
+                    {label}
+                  </Link>
+                  {index < array.length - 1 && (
+                    <Image
+                      src={boneIcon.src}
+                      height={boneIcon.height}
+                      width={boneIcon.width}
+                      alt={boneIcon.alt}
+                      className={pc.bone_icon}
+                    />
+                  )}
+                </>
+              ))}
+          </div>
         </div>
 
         {/* smaller nav bar for desktop view */}
@@ -105,14 +116,43 @@ export default function Navbar() {
           className={pc.small_nav_container}
           style={!isScrolled ? { display: "none" } : {}}
         >
-          <Image
-            src={navBarBothDogs.src}
-            height={navBarBothDogs.height}
-            width={navBarBothDogs.width}
-            alt={navBarBothDogs.alt}
-            className={pc.navbar_both_dogs}
-          />
-          <p className={pc.title}>The Pet Bodega</p>
+          <div className={pc.small_nav_header}>
+            <Image
+              src={one_box_header.src}
+              height={one_box_header.height}
+              width={one_box_header.width}
+              alt={one_box_header.alt}
+              className={pc.one_box_header}
+            />
+            <p className={pc.title_small}>The Pet Bodega</p>
+            <Image
+              src={one_box_header.src}
+              height={one_box_header.height}
+              width={one_box_header.width}
+              alt={one_box_header.alt}
+              className={pc.one_box_header}
+            />
+          </div>
+          <div className={pc.link_container}>
+            {links
+              .filter((link) => link.href)
+              .map(({ href, label }, index, array) => (
+                <>
+                  <Link key={href} href={href} className={pc.nav_link}>
+                    {label}
+                  </Link>
+                  {index < array.length - 1 && (
+                    <Image
+                      src={boneIcon.src}
+                      height={boneIcon.height}
+                      width={boneIcon.width}
+                      alt={boneIcon.alt}
+                      className={pc.bone_icon}
+                    />
+                  )}
+                </>
+              ))}
+          </div>
         </div>
 
         {/* mobile navigation menu below */}
@@ -125,13 +165,6 @@ export default function Navbar() {
               alt={navBarMobileDogTwo.alt}
               className={pc.navbar_mobile_dog_one}
             />
-            {/*<Image
-              src={navBarMobileDogOne.src}
-              height={navBarMobileDogOne.height}
-              width={navBarMobileDogOne.width}
-              alt={navBarMobileDogOne.alt}
-              className={pc.navbar_mobile_dog_two}
-            />*/}
           </div>
           <button>
             <a href="tel:+18472228005" className={pc.book_now}>

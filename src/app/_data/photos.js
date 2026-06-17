@@ -5,10 +5,17 @@ export const navBarDogOne = {
   alt: "...",
 };
 
-export const navBarDogTwo = {
-  src: "https://res.cloudinary.com/dzpne110u/image/upload/v1778270977/pet_bodega/assets/lola_dark_BG_lwh5en.svg",
-  height: 192,
-  width: 189,
+export const two_box_header = {
+  src: "https://res.cloudinary.com/dzpne110u/image/upload/v1780937547/pet_bodega/assets/6-8-26/2box_header_ez2a1p.svg",
+  height: 124,
+  width: 2560,
+  alt: "...",
+};
+
+export const one_box_header = {
+  src: "https://res.cloudinary.com/dzpne110u/image/upload/v1780937547/pet_bodega/assets/6-8-26/1box_header_i24k6q.svg",
+  height: 62,
+  width: 2560,
   alt: "...",
 };
 
@@ -16,20 +23,6 @@ export const boneIcon = {
   src: "https://res.cloudinary.com/dzpne110u/image/upload/v1778270980/pet_bodega/assets/bone_dbxe9i.svg",
   height: 42,
   width: 7,
-  alt: "...",
-};
-
-export const navBarBothDogs = {
-  src: "https://res.cloudinary.com/dzpne110u/image/upload/v1779304324/pet_bodega/assets/overlap_dogs_dark_BG_fewhja.svg",
-  height: 593,
-  width: 672,
-  alt: "...",
-};
-
-export const navBarMobileDogOne = {
-  src: "https://res.cloudinary.com/dzpne110u/image/upload/v1779634090/pet_bodega/assets/pattern%20icons/lola_head_darkBG_aoi6xv.svg",
-  height: 126,
-  width: 220,
   alt: "...",
 };
 
