@@ -1,23 +1,11 @@
-/*.nav_icon {
-  margin-left: 4rem;
-  height: 80px;
-  width: auto;
-}
-
-.nav_link:hover {
-  background: lightgray;
-  border-bottom: none;
-}*/
-
 .base_navbar_container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
 }
 
-.header {
+.base_header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,12 +19,11 @@
   width: auto;
 }
 
-.dog_icon,
+.dog_icon_right,
 .dog_icon_left {
   height: 100px;
   width: auto;
-  margin-right: 1rem;
-  margin-left: .5rem;
+  margin: 0rem 1rem 0rem 0.5rem;
 }
 
 .dog_icon_left {
@@ -53,9 +40,7 @@
 
 .title_small {
   font-size: 40px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: .4rem;
+  padding: 0rem 1rem 0.4rem 1rem;
 }
 
 .info_container {
@@ -82,9 +67,9 @@
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  padding: 1.5rem;
   color: var(--background);
   background-color: rgba(23, 23, 23, 0.95);
+  padding: 1.5rem;
   width: 100vw;
 }
 
@@ -111,19 +96,8 @@
   overflow: hidden;
 }
 
-.navbar_both_dogs {
-  height: 80px;
-  width: auto;
-  margin-right: 2rem;
-}
-
 .navbar_mobile_dog_one {
   height: 70px;
-  width: auto;
-}
-
-.navbar_mobile_dog_two {
-  height: 60px;
   width: auto;
 }
 

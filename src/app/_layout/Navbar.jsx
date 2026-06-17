@@ -53,7 +53,7 @@ export default function Navbar() {
           className={pc.base_navbar_container}
           style={isScrolled ? { display: "none" } : {}}
         >
-          <div className={pc.header}>
+          <div className={pc.base_header}>
             <Image
               src={two_box_header.src}
               height={two_box_header.height}
@@ -79,7 +79,7 @@ export default function Navbar() {
               height={dogBookEndTwo.height}
               width={dogBookEndTwo.width}
               alt={dogBookEndTwo.alt}
-              className={pc.dog_icon}
+              className={pc.dog_icon_right}
             />
             <Image
               src={two_box_header.src}
