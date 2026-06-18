@@ -4,6 +4,10 @@
   height: auto;
 }
 
+.hero_photo {
+  position: relative;
+}
+
 .copy_section {
   display: flex;
   flex-direction: column;
@@ -14,6 +18,18 @@
   text-align: center;
   padding: 4rem 0rem 4rem 0rem;
   width: 100vw;
+}
+
+.hero_tag {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--main-font);
+  color: var(--background);
+  font-size: 40px;
+  text-transform: uppercase;
+  top: 520px;
 }
 
 #tag_line {
@@ -179,4 +195,10 @@
   .info_card:nth-child(odd) .icon {
     margin-right: 0rem;
   }
+}
+
+@media (min-width: 1600px) {
+.hero_tag {
+  top: 820px;
+}
 }

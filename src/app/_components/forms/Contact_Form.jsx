@@ -86,17 +86,13 @@ export default function Contact_Form() {
         console.error("MESSAGE FAILED", error?.text);
         setMessageStatus("error");
         setIsLoading(false);
-      }
+      },
     );
   };
 
   return (
-    <article>
-      <h3 className={styles.header}>Form</h3>
-      <p className={styles.sub_header}>
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet
-        consectetur adipiscing elit quisque faucibus.
-      </p>
+    <article className={styles.contact_form_container}>
+      <h3 className={styles.header}>Contact Us</h3>
       <form ref={formRef} onSubmit={sendEmail}>
         <label className={styles.label}>Full name*</label>
         <input

@@ -127,17 +127,3 @@ export const dogBookEndTwo = {
   width: 307,
   alt: "...",
 };
-
-export const footerImage = {
-  src: "https://res.cloudinary.com/dzpne110u/image/upload/v1780937547/pet_bodega/assets/6-8-26/2box_header_ez2a1p.svg",
-  height: 124,
-  width: 2560,
-  alt: "...",
-};
-
-export const dogMosaic = {
-  src: "https://res.cloudinary.com/dzpne110u/image/upload/v1779117499/pet_bodega/assets/5-18-26/dog_mosaic_hothxh.jpg",
-  height: 720,
-  width: 1440,
-  alt: "...",
-};

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { footerImage } from "../_data/photos";
+import { two_box_header } from "../_data/photos";
 
 import styles from "../_styling/footer.module.css";
 
@@ -44,10 +44,10 @@ export default function Footer() {
         </div>
       </div>
       <Image
-        src={footerImage.src}
-        height={footerImage.height}
-        width={footerImage.width}
-        alt={footerImage.alt}
+        src={two_box_header.src}
+        height={two_box_header.height}
+        width={two_box_header.width}
+        alt={two_box_header.alt}
         className={styles.footer_banner}
       />
       <p>&copy; {new Date().getFullYear()} Marf Inc. All rights reserved.</p>

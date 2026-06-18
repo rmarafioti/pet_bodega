@@ -6,8 +6,8 @@ import {
   businessExterior,
   infoCards,
   navBarDogOne,
-  dogMosaic,
 } from "./_data/photos";
+import Contact_Form from "./_components/forms/Contact_Form";
 import FadeInSection from "./_components/Fade_In_Section";
 import Responsive_Image_Layout from "./_components/Responsive_Image_Layout";
 
@@ -41,6 +41,10 @@ function InfoCard() {
 export default function Home() {
   return (
     <main>
+      <div className={styles.hero_tag}>
+        <p>Come For The Bath,</p>
+        <p>Stay For The Vibes</p>
+      </div>
       <Responsive_Image_Layout photoData={heroPhoto} />
       <div className={styles.copy_section} id={styles.tag_line}>
         <p>
@@ -69,23 +73,7 @@ export default function Home() {
         </div>
         <InfoCard />
       </div>
-      {/*<div className={styles.copy_section} id={styles.ig_section}>
-        <a
-          href="https://www.instagram.com/the.pet.bodega/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.ig_link}
-        >
-          @the.pet.bodgea
-        </a>
-      </div>*/}
-      <Image
-        src={dogMosaic.src}
-        height={dogMosaic.height}
-        width={dogMosaic.width}
-        alt={dogMosaic.alt}
-        className={styles.dog_mosaic}
-      />
+      <Contact_Form />
     </main>
   );
 }
