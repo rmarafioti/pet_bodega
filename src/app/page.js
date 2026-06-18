@@ -73,6 +73,44 @@ export default function Home() {
         </div>
         <InfoCard />
       </div>
+      <div className={styles.review_section_top}>
+        <p>
+          <span className={styles.reviews_header}>Reviews</span>
+          <i>
+            &quot;My dog came out looking so dapper and handsome, with his coat
+            soft and shiny. I also loved that they used high-quality, gentle
+            products that didn&apos;t irritate his sensitive skin.&quot;
+          </i>
+        </p>
+        <p className={styles.top_right_review}>
+          <i>
+            &quot;Great place with tons of goodies for your pups! Owner and
+            employees are super nice and accommodating. Great location with lots
+            of street parking. My dogs love all their new treats/toys and it
+            seems like they have close relationships with local vendors. They
+            have regular and self grooming options which is awesome, and
+            convenient hours. Will definitely be back!&quot;
+          </i>
+        </p>
+      </div>
+      <div className={styles.review_section_bottom}>
+        <p className={styles.bottom_left_review}>
+          <i>
+            &quot;Did an amazing job and had lots of patience with my German
+            shepherd very skilled and knowledgeable staff highly
+            recommended!&quot;
+          </i>
+        </p>
+        <p>
+          <i>
+            &quot;Amazing place with everything you need for a seamless dog
+            wash. Super helpful and kind. Also, there is a very extensive retail
+            store with excellent product lines. Thanks from Lexi the German
+            Shepherd!&quot;
+          </i>
+          <span className={styles.reviews_tag}>Read More Here</span>
+        </p>
+      </div>
       <Contact_Form />
     </main>
   );

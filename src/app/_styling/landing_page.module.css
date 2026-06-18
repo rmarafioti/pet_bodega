@@ -123,20 +123,64 @@
   color: var(--background);
 }
 
-#ig_section {
-  padding: 2rem 0rem 3rem 0rem;
-}
-
-.ig_link {
-  font-size: 48px;
-}
-
-.dog_mosaic {
+.review_section_top,
+.review_section_bottom {
+  display: flex;
   width: 100vw;
-  height: auto;
+}
+
+.review_section_top > p,
+.review_section_bottom > p {
+  font-family: var(--copy-light);
+  padding: 2rem 4rem 4rem 4rem;
+}
+
+.review_section_bottom > p {
+padding: 2rem 4rem 2rem 4rem;
+}
+
+.review_section_top > p:nth-child(even) {
+  color: var(--background);
+ background-color: var(--foreground);
+}
+
+.review_section_bottom > p:nth-child(odd) {
+  color: var(--background);
+ background-color: var(--foreground);
+}
+
+.reviews_header,
+.reviews_tag {
+  display: block;
+  font-family: var(--main-font);
+  font-size: 38px;;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+.reviews_tag {
+  padding-top: 1rem;
+}
+
+.top_right_review,
+.bottom_left_review {
+  width: 1920px;
+}
+
+.bottom_left_review {
+  width: 1870px;
 }
 
 @media (max-width: 667px) {
+.hero_tag {
+  font-size: 28px;
+  top: 380px;
+}
+
+.copy_section {
+  padding: 2rem 0rem 2rem 0rem;
+}
+
   #tag_line > p,
   .ig_link {
     font-size: 28px;

@@ -1,5 +1,5 @@
 .contact_form_container {
-  margin: 4rem 0rem 4rem 0rem ;
+  margin: 4rem 0rem 4rem 0rem;
 }
 
 .header {
@@ -52,6 +52,9 @@
 }
 
 @media (max-width: 667px) and (hover: none) {
+  .contact_form_container {
+    margin: 2rem 0rem 2rem 0rem;
+  }
   .header {
     margin-top: 1rem;
   }
@@ -64,7 +67,7 @@
   .send,
   .sub_header,
   .form {
-    width: 100%;
+    width: 90vw;
   }
   .send {
     text-align: center;
