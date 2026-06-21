@@ -39,13 +39,6 @@ export default function Form_Modal({ isOpen, closeModal, children }) {
             />
           </div>
         </section>
-        <Image
-          src={formPhoto.src}
-          alt={formPhoto.alt}
-          width={formPhoto.width}
-          height={formPhoto.height}
-          className={styles.form_photo}
-        />
       </div>
       <div className={styles.modalContent}>{children}</div>
     </div>
