@@ -133,7 +133,7 @@ export default function Navbar() {
           className={pc.small_nav_container}
           style={!isScrolled ? { display: "none" } : {}}
         >
-          <div className={pc.small_nav_header}>
+          <Link href="/" className={pc.small_nav_header}>
             <Image
               src={one_box_header.src}
               height={one_box_header.height}
@@ -149,7 +149,7 @@ export default function Navbar() {
               alt={one_box_header.alt}
               className={pc.one_box_header}
             />
-          </div>
+          </Link>
           <div className={pc.link_container}>
             {links
               .filter((link) => link.href)

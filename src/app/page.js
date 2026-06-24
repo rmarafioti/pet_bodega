@@ -7,6 +7,7 @@ import {
   infoCards,
   navBarDogOne,
 } from "./_data/photos";
+import Photo_Gallery from "./_components/Photo_Gallery";
 import Contact_Form from "./_components/forms/Contact_Form";
 import FadeInSection from "./_components/Fade_In_Section";
 import Responsive_Image_Layout from "./_components/Responsive_Image_Layout";
@@ -113,6 +114,7 @@ export default function Home() {
           </span>
         </p>
       </div>
+      <Photo_Gallery />
       <Contact_Form />
     </main>
   );

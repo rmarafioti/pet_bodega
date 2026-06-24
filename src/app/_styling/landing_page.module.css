@@ -53,7 +53,7 @@
 }
 
 .info_header {
-  font-size: 78px;
+  font-size: 68px;
   margin-bottom: 6rem;
 }
 
@@ -67,7 +67,7 @@
   display: flex;
   flex-direction: column;
 
-  width: 800px;
+  width: 860px;
 }
 
 .info_card {
@@ -111,7 +111,7 @@
   flex-direction: column;
   justify-content: center;
   line-height: 1.8;
-  width: 460px;
+  width: 620px;
 }
 
 .copy_two {
@@ -136,24 +136,24 @@
 }
 
 .review_section_bottom > p {
-padding: 2rem 4rem 2rem 4rem;
+  padding: 2rem 4rem 2rem 4rem;
 }
 
 .review_section_top > p:nth-child(even) {
   color: var(--background);
- background-color: var(--foreground);
+  background-color: var(--foreground);
 }
 
 .review_section_bottom > p:nth-child(odd) {
   color: var(--background);
- background-color: var(--foreground);
+  background-color: var(--foreground);
 }
 
 .reviews_header,
 .reviews_tag {
   display: block;
   font-family: var(--main-font);
-  font-size: 38px;;
+  font-size: 38px;
   text-transform: uppercase;
   padding-bottom: 1rem;
 }
@@ -172,14 +172,14 @@ padding: 2rem 4rem 2rem 4rem;
 }
 
 @media (max-width: 667px) {
-.hero_tag {
-  font-size: 28px;
-  top: 380px;
-}
+  .hero_tag {
+    font-size: 28px;
+    top: 380px;
+  }
 
-.copy_section {
-  padding: 2rem 0rem 2rem 0rem;
-}
+  .copy_section {
+    padding: 2rem 0rem 2rem 0rem;
+  }
 
   #tag_line > p,
   .ig_link {
@@ -239,10 +239,33 @@ padding: 2rem 4rem 2rem 4rem;
   .info_card:nth-child(odd) .icon {
     margin-right: 0rem;
   }
+
+  .top_right_review,
+  .bottom_left_review,
+  .bottom_left_review,
+  .review_section_top,
+  .review_section_bottom {
+    width: 100vw;
+  }
+
+  .review_section_top,
+  .review_section_bottom {
+    flex-direction: column;
+  }
+
+ .review_section_bottom > p:first-child {
+  color: var(--foreground);
+  background-color: var(--background);
+}
+
+ .review_section_bottom > p:last-child {
+  color: var(--background);
+  background-color: var(--foreground);
+}
 }
 
 @media (min-width: 1600px) {
-.hero_tag {
-  top: 820px;
-}
+  .hero_tag {
+    top: 820px;
+  }
 }

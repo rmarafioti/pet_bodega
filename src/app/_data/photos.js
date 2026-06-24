@@ -41,7 +41,7 @@ export const heroPhoto = {
     width: 1440,
   },
   mobile: {
-    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1779639373/pet_bodega/assets/interior_mobile_u1fj3u.png",
+    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1782344349/interior_mobile_qz9wai.png",
     height: 447,
     width: 528,
   },
