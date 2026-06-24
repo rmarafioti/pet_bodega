@@ -39,11 +39,24 @@ export default function Navbar() {
     setMenuOpen(!menuOpen);
   };
 
+  function handleClick(e) {
+    const href = e.currentTarget.getAttribute("href");
+    if (!href || !href.includes("#")) return;
+
+    const hash = href.split("#")[1];
+    const targetSection = document.getElementById(hash);
+
+    if (targetSection) {
+      e.preventDefault();
+      targetSection.scrollIntoView({ behavior: "smooth" });
+      window.history.pushState(null, "", `#${hash}`);
+    }
+  }
+
   const links = [
-    /*{ href: "/", label: "Home" },*/
-    { href: "/featureOne", label: "about us" },
-    { href: "/featureTwo", label: "meet our team" },
-    { href: "/featureThree", label: "contact us" },
+    { href: "/AboutUs", label: "about us" },
+    { href: "/OurTeam", label: "meet our team" },
+    { href: "/#contact_us", label: "contact us" },
   ];
 
   return (
@@ -53,7 +66,7 @@ export default function Navbar() {
           className={pc.base_navbar_container}
           style={isScrolled ? { display: "none" } : {}}
         >
-          <div className={pc.base_header}>
+          <Link href="/" className={pc.base_header}>
             <Image
               src={two_box_header.src}
               height={two_box_header.height}
@@ -88,13 +101,17 @@ export default function Navbar() {
               alt={two_box_header.alt}
               className={pc.two_box_header}
             />
-          </div>
+          </Link>
           <div className={pc.link_container}>
             {links
               .filter((link) => link.href)
               .map(({ href, label }, index, array) => (
-                <>
-                  <Link key={href} href={href} className={pc.nav_link}>
+                <span key={href} className={pc.nav_link_group}>
+                  <Link
+                    href={href}
+                    onClick={handleClick}
+                    className={pc.nav_link}
+                  >
                     {label}
                   </Link>
                   {index < array.length - 1 && (
@@ -106,7 +123,7 @@ export default function Navbar() {
                       className={pc.bone_icon}
                     />
                   )}
-                </>
+                </span>
               ))}
           </div>
         </div>
@@ -137,7 +154,7 @@ export default function Navbar() {
             {links
               .filter((link) => link.href)
               .map(({ href, label }, index, array) => (
-                <>
+                <span key={href} className={pc.nav_link_group}>
                   <Link key={href} href={href} className={pc.nav_link}>
                     {label}
                   </Link>
@@ -150,7 +167,7 @@ export default function Navbar() {
                       className={pc.bone_icon}
                     />
                   )}
-                </>
+                </span>
               ))}
           </div>
         </div>

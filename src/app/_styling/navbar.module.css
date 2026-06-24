@@ -12,6 +12,7 @@
   color: var(--foreground);
   background-color: var(--background);
   width: 100vw;
+  text-decoration: none;
 }
 
 .two_box_header {

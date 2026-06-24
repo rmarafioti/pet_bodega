@@ -108,7 +108,9 @@ export default function Home() {
             store with excellent product lines. Thanks from Lexi the German
             Shepherd!&quot;
           </i>
-          <span className={styles.reviews_tag}>Read More Here</span>
+          <span className={styles.reviews_tag} id="contact_us">
+            Read More Here
+          </span>
         </p>
       </div>
       <Contact_Form />
