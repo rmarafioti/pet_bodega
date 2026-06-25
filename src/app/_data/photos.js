@@ -127,3 +127,62 @@ export const dogBookEndTwo = {
   width: 307,
   alt: "...",
 };
+
+export const pictureFrames = [
+  {
+    id: 1,
+    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1782335904/pet_bodega/assets/revised%20picture%20frames/frame_02_zpzxrg.png",
+    height: 943,
+    width: 670,
+    alt: "...",
+  },
+  {
+    id: 2,
+    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1782335904/pet_bodega/assets/revised%20picture%20frames/frame_01_ctb8pw.png",
+    height: 1167,
+    width: 925,
+    alt: "...",
+  },
+  {
+    id: 3,
+    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1782335904/pet_bodega/assets/revised%20picture%20frames/frame_08_lg8blx.png",
+    height: 975,
+    width: 844,
+    alt: "...",
+  },
+  {
+    id: 4,
+    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1782335903/pet_bodega/assets/revised%20picture%20frames/frame_06_ajgxpd.png",
+    height: 1163,
+    width: 983,
+    alt: "...",
+  },
+  {
+    id: 5,
+    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1782335903/pet_bodega/assets/revised%20picture%20frames/frame_07_kbiqo7.png",
+    height: 823,
+    width: 975,
+    alt: "...",
+  },
+  {
+    id: 6,
+    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1782335902/pet_bodega/assets/revised%20picture%20frames/frame_05_vzatr6.png",
+    height: 1205,
+    width: 974,
+    alt: "...",
+  },
+  {
+    id: 7,
+    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1782335902/pet_bodega/assets/revised%20picture%20frames/frame_03_shxufh.png",
+    height: 816,
+    width: 816,
+    alt: "...",
+  },
+  {
+    id: 8,
+    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1782335902/pet_bodega/assets/revised%20picture%20frames/frame_04_ypblbm.png",
+    height: 993,
+    width: 915,
+    alt: "...",
+  },
+];
