@@ -1,6 +1,7 @@
 .footer_banner {
   height: auto;
-  width: 100vw;
+  width: auto;
+  height: 120px;
   margin-bottom: 2rem;
 }
 

@@ -2,8 +2,7 @@
 
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import Form_Modal from "./Form_Modal";
-import useModal from "../../_hooks/useModal";
+import { IoCloseOutline } from "react-icons/io5";
 
 import styles from "../../_styling/contact_form.module.css";
 
@@ -11,7 +10,6 @@ export default function Contact_Form() {
   const formRef = useRef();
   const [isLoading, setIsLoading] = useState(false);
   const [messageStatus, setMessageStatus] = useState(null);
-  const { isOpen, openModal, closeModal } = useModal();
 
   const inputForm = {
     full_name: "",
@@ -55,6 +53,8 @@ export default function Contact_Form() {
     });
   };
 
+  const dialogRef = useRef(null);
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -80,15 +80,18 @@ export default function Contact_Form() {
         setValidationError({});
         formRef.current.reset();
         setFormValues(inputForm);
-        openModal();
+        dialogRef.current.showModal();
       },
       (error) => {
         console.error("MESSAGE FAILED", error?.text);
         setMessageStatus("error");
         setIsLoading(false);
+        dialogRef.current.showModal();
       },
     );
   };
+
+  const closeDialog = () => dialogRef.current.close();
 
   return (
     <article className={styles.contact_form_container} id="contact_us">
@@ -144,7 +147,27 @@ export default function Contact_Form() {
           </p>
         )}
       </form>
-      <Form_Modal isOpen={isOpen} closeModal={closeModal} />
+      <dialog
+        ref={dialogRef}
+        className={styles.dialog}
+        onClick={(e) => {
+          // close when clicking the backdrop (::backdrop is the dialog element itself)
+          if (e.target === dialogRef.current) closeDialog();
+        }}
+      >
+        <div className={styles.close_button_container}>
+          <IoCloseOutline
+            onClick={closeDialog}
+            className={styles.close_button}
+            aria-label="close modal button"
+          />
+        </div>
+        {messageStatus === "success" ? (
+          <p className={styles.dialog_message}>Message Sent!</p>
+        ) : (
+          <p>Error Sending Message. Please Try Again.</p>
+        )}
+      </dialog>
     </article>
   );
 }

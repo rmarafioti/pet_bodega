@@ -52,12 +52,44 @@
   padding-bottom: 0.5rem;
 }
 
+.dialog[open] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+}
+
+.dialog_message {
+  font-size: 28px;
+}
+
+.close_button_container {
+  align-self: flex-end;
+  height: 42px;
+  border: 2px solid var(--foreground);
+  margin-bottom: .5rem;
+
+  cursor: pointer;
+}
+
+.close_button {
+font-size: 38px;
+}
+
+.dialog::backdrop {
+  background: rgba(0, 0, 0, 0.8);
+}
+
 @media (max-width: 667px) and (hover: none) {
   .contact_form_container {
-    margin: 2rem 0rem 2rem 0rem;
-  }
-  .header {
-    margin-top: 1rem;
+    margin: 0rem 0rem 4rem 0rem;
   }
   .sub_header {
     margin-bottom: 1rem;
