@@ -1,0 +1,19 @@
+.message_container {
+    margin-top: 6rem;
+}
+
+.header {
+    font-family: var(--main-font);
+    text-transform: uppercase;
+}
+
+.message {
+    font-family: var(--copy-light);
+    font-size: 30px;
+}
+
+@media (max-width: 667px) and (hover: none) {
+    .message_container {
+        margin-top: 0rem;
+    }
+}

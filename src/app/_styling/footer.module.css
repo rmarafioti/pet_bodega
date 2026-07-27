@@ -1,6 +1,8 @@
 .footer_banner {
-  height: 186px;
+  height: auto;
   width: auto;
+  height: 120px;
+  margin-bottom: 2rem;
 }
 
 .info_container {
@@ -10,8 +12,7 @@
   width: 100vw;
   background-color: black;
   color: white;
-  padding: 2rem 0rem 2rem 0rem;
-  margin-bottom: 2rem;
+  padding: 4rem 0rem 4rem 0rem;
 }
 
 .links {
@@ -22,19 +23,31 @@
 
 .ig_link,
 .phone_number,
-.google_link,
-.name {
+.google_link {
   font-size: 28px;
+  text-decoration: none;
+}
+
+.name {
+  font-family: var(--main-font);
+  text-transform: uppercase;
+  font-size: 32px;
+}
+
+.ig_link {
+  font-family: var(--copy-bold);
 }
 
 .hours > p {
+  text-align: right;
   font-size: 20px;
   margin-right: 18rem;
 }
 
 @media (max-width: 667px) {
   .footer_banner {
-    height: 126px;
+    height: 68.5px;
+    width: auto;
   }
 
   .info_container {
@@ -50,9 +63,9 @@
   }
 
   .links {
-  margin-left: 0rem;
-  margin-bottom: 2rem;
-}
+    margin-left: 0rem;
+    margin-bottom: 2rem;
+  }
 
   .info > p {
     font-size: 20px;
@@ -62,11 +75,7 @@
   .hours > p {
     font-size: 20px;
     margin-right: 0rem;
+    text-align: left;
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .footer_banner {
-    background-color: var(--foreground);
-  }
-}

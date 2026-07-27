@@ -1,21 +1,29 @@
-.header {
-  margin-bottom: 0.5rem;
+.contact_form_container {
+  margin: 0rem 0rem 4rem 0rem;
+  padding-top: 4rem;
 }
 
-.sub_header {
-  margin-bottom: 1rem;
+.header {
+  font-family: var(--main-font);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.label,
+.required {
+  font-family: var(--copy-bold);
 }
 
 .name,
 .email,
 .message,
 .send {
+  font-family: var(--copy-light);
   font-size: 20px;
   display: flex;
   padding: 0.5rem;
   margin: 0.2rem 0rem 1rem 0rem;
-  border-radius: 5px;
-  border: 1px solid var(--foreground);
+  border: 2px solid var(--foreground);
   width: 100%;
 }
 
@@ -26,8 +34,9 @@
 .send {
   font-size: 18px;
   font-weight: 600;
+  color: var(--background);
   text-align: center;
-  background-color: lightgray;
+  background-color: rgba(23, 23, 23, 0.8);
   padding: 0.8rem 0.5rem 0.8rem 0.5rem;
   border: none;
   cursor: pointer;
@@ -35,33 +44,52 @@
 }
 
 .send:hover {
-  color: var(--background);
   background-color: var(--foreground);
 }
 
 .required_error {
+  font-family: var(--copy-light);
   padding-bottom: 0.5rem;
 }
 
-/* dark mode stylings */
-@media (prefers-color-scheme: dark) {
-  .name,
-  .email,
-  .message {
-    background-color: var(--dm_background);
-  }
-  .send {
-    color: var(--background);
-  }
+.dialog[open] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
 }
 
-[data-theme="dark"] :is(.name, .email, .message) {
-  background-color: var(--dm_background);
+.dialog_message {
+  font-size: 28px;
+}
+
+.close_button_container {
+  align-self: flex-end;
+  height: 42px;
+  border: 2px solid var(--foreground);
+  margin-bottom: .5rem;
+
+  cursor: pointer;
+}
+
+.close_button {
+font-size: 38px;
+}
+
+.dialog::backdrop {
+  background: rgba(0, 0, 0, 0.8);
 }
 
 @media (max-width: 667px) and (hover: none) {
-  .header {
-    margin-top: 1rem;
+  .contact_form_container {
+    margin: 0rem 0rem 4rem 0rem;
   }
   .sub_header {
     margin-bottom: 1rem;
@@ -72,7 +100,7 @@
   .send,
   .sub_header,
   .form {
-    width: 100%;
+    width: 90vw;
   }
   .send {
     text-align: center;

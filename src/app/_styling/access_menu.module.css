@@ -112,51 +112,6 @@
   cursor: pointer;
 }
 
-/* dark mode stylings */
-@media (prefers-color-scheme: dark) {
-  .accessMenu,
-  .accessIcon {
-    background-color: var(--dm_background);
-    border: 1px solid var(--foreground);
-    border-right: none;
-  }
-  .sizeItem,
-  .resetButton {
-    color: var(--background);
-  }
-  .closeButton {
-    border: 1px solid var(--foreground);
-  }
-  .indicator {
-    color: var(--background)
-  }
-  .indicator.active {
-  color: var(--foreground);
-
-}
-}
-
-[data-theme="dark"] :is(.accessMenu, .accessIcon) {
-  background-color: var(--dm_background);
-  border: 1px solid var(--foreground);
-  border-right: none;
-}
-
-[data-theme="dark"] :is(.sizeItem, .resetButton) {
-  color: var(--background);
-}
-
-[data-theme="dark"] .closeButton {
-  border: 1px solid var(--foreground);
-}
-
-[data-theme="dark"] .indicator {
-  color: var(--background);
-}
-
-[data-theme="dark"] .indicator.active {
-  color: var(--foreground);
-}
 @media (max-width: 667px) {
   .accessIcon {
     background-color: var(--foreground);
@@ -176,21 +131,6 @@
     border-radius: 0px;
     width: 100%;
     border-top: 1px solid lightgray;
-  }
-  @media (prefers-color-scheme: dark) {
-  .accessMenu {
-    border-left: none;
-    border-bottom: none;
-  }
-}
-  [data-theme="dark"] .accessMenu {
-    border-left: none;
-    border-bottom: none;
-  }
-  [data-theme="dark"] .accessIcon {
-    color: var(--background);
-    background-color: var(--foreground);
-    border: none;
   }
 }
 

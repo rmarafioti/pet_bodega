@@ -1,20 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { footerImage } from "../_data/photos";
+import { two_box_header } from "../_data/photos";
 
 import styles from "../_styling/footer.module.css";
 
 export default function Footer() {
   return (
     <footer>
-      <Image
-        src={footerImage.src}
-        height={footerImage.height}
-        width={footerImage.width}
-        alt={footerImage.alt}
-        className={styles.footer_banner}
-      />
       <div className={styles.info_container}>
         <div className={styles.links}>
           <p className={styles.name}>The Pet Bodgea</p>
@@ -24,7 +17,9 @@ export default function Footer() {
             rel="noopener noreferrer"
             className={styles.google_link}
           >
-            109 E Prospect Ave, Mt Prospect, IL 60056
+            109 E Prospect Ave,
+            <br />
+            Mt Prospect, IL 60056
           </a>
           <a href="tel:+18472228005" className={styles.phone_number}>
             847.222.8005
@@ -39,14 +34,22 @@ export default function Footer() {
           </a>
         </div>
         <div className={styles.hours}>
-          <p>Thurs: 9AM - 7PM</p>
-          <p>Fri: 9AM - 7PM</p>
-          <p>Sat: 9AM - 5PM</p>
-          <p>Sun / Mon: Closed</p>
-          <p>Tues: 9AM - 7PM</p>
-          <p>Wed: 10AM - 7PM</p>
+          <p>Sun: Closed</p>
+          <p>Mon: 10am - 7pm</p>
+          <p>Tues: 9am - 7pm</p>
+          <p>Wed: 10am - 7pm</p>
+          <p>Thurs: 9am - 7pm</p>
+          <p>Fri: 9am - 7pm</p>
+          <p>Sat: 9am - 5pm</p>
         </div>
       </div>
+      <Image
+        src={two_box_header.src}
+        height={two_box_header.height}
+        width={two_box_header.width}
+        alt={two_box_header.alt}
+        className={styles.footer_banner}
+      />
       <p>&copy; {new Date().getFullYear()} Marf Inc. All rights reserved.</p>
     </footer>
   );

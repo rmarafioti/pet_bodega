@@ -1,0 +1,16 @@
+.gallery_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  padding: 6rem 0rem 6rem 0rem;
+  width: 100vw;
+  background-color: var(--foreground);
+}
+
+.picture {
+  margin: 2rem;
+  height: 340px;
+  width: auto;
+}
