@@ -1,10 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { heroPhoto, infoCards, navBarDogOne } from "./_data/photos";
+
+import usePhotoGallery from "./_hooks/usePhotoGallery";
+import FadeInSection from "./_components/Fade_In_Section";
+import { heroCarousel, infoCards, navBarDogOne } from "./_data/photos";
 import Photo_Gallery from "./_components/Photo_Gallery";
 import Contact_Form from "./_components/forms/Contact_Form";
-import FadeInSection from "./_components/Fade_In_Section";
+import Hero_Carousel from "./_components/Hero_Carousel";
 import Responsive_Image_Layout from "./_components/Responsive_Image_Layout";
 
 import styles from "./_styling/landing_page.module.css";
@@ -34,9 +37,17 @@ function InfoCard() {
 }
 
 export default function Home() {
+  const { handleNext, handlePrev, currentImageObj, currentIndex } =
+    usePhotoGallery(heroCarousel);
+
   return (
     <main>
-      <Responsive_Image_Layout photoData={heroPhoto} />
+      <Hero_Carousel
+        currentImageObj={currentImageObj}
+        currentIndex={currentIndex}
+        onPrev={handlePrev}
+        onNext={handleNext}
+      />
       <div className={styles.copy_section} id={styles.tag_line}>
         <p>
           Come for the bath, Stay

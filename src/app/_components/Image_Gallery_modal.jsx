@@ -2,7 +2,6 @@
 
 import React, { useRef, useEffect } from "react";
 import Image from "next/image";
-import { IoIosCloseCircle } from "react-icons/io";
 
 import styles from "../_styling/gallery_modal.module.css";
 
@@ -53,7 +52,6 @@ export default function Gallery_Modal({ isOpen, closeModal, currentImageObj }) {
             </div>
           </div>
         </div>
-
         <button
           type="button"
           onClick={closeModal}

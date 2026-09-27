@@ -1,3 +1,7 @@
+.icon_wrapper {
+  position: relative;
+}
+
 .dog_icon_left,
 .dog_icon_right {
   position: absolute;
@@ -20,7 +24,6 @@
 @media (min-width: 1600px) {
   .dog_icon_left,
   .dog_icon_right {
-    position: fixed;
     height: 300px;
     width: auto;
     top: 940px;

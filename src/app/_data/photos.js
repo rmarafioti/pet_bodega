@@ -33,19 +33,65 @@ export const boneIcon = {
   alt: "...",
 };
 
-export const heroPhoto = {
-  alt: "...",
-  desktop: {
-    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790191045/pet_bodega/assets/9-22-26/carousel%20images/carousel_01_desktop_r2xh8l.jpg",
-    width: 2560,
-    height: 1000,
+/* hero photo slider, desktop and mobile views*/
+export const heroCarousel = [
+  {
+    id: 1,
+    alt: "...",
+    desktop: {
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790191045/pet_bodega/assets/9-22-26/carousel%20images/carousel_01_desktop_r2xh8l.jpg",
+      width: 2560,
+      height: 1000,
+    },
+    mobile: {
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790191050/pet_bodega/assets/9-22-26/carousel%20images/carousel_01_mobile_im0woz.jpg",
+      width: 3000,
+      height: 3000,
+    },
   },
-  mobile: {
-    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1782344349/interior_mobile_qz9wai.png",
-    height: 447,
-    width: 528,
+  {
+    id: 2,
+    alt: "...",
+    desktop: {
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790191045/pet_bodega/assets/9-22-26/carousel%20images/carousel_02_desktop_lrobmu.jpg",
+      width: 2560,
+      height: 1000,
+    },
+    mobile: {
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790191051/pet_bodega/assets/9-22-26/carousel%20images/carousel_02_mobile_qyoqlp.jpg",
+      width: 3000,
+      height: 3000,
+    },
   },
-};
+  {
+    id: 3,
+    alt: "...",
+    desktop: {
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790191044/pet_bodega/assets/9-22-26/carousel%20images/carousel_03_desktop_zpevcl.jpg",
+      width: 2560,
+      height: 1000,
+    },
+    mobile: {
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790191047/pet_bodega/assets/9-22-26/carousel%20images/carousel_03_mobile_knlimf.jpg",
+      width: 3000,
+      height: 3000,
+    },
+  },
+  {
+    id: 4,
+    alt: "...",
+    desktop: {
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790191043/pet_bodega/assets/9-22-26/carousel%20images/carousel_04_desktop_jhyxmx.jpg",
+      width: 2560,
+      height: 1000,
+    },
+    mobile: {
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790191049/pet_bodega/assets/9-22-26/carousel%20images/carousel_04_mobile_te2uer.jpg",
+      width: 3000,
+      height: 3000,
+    },
+  },
+];
 
 export const infoCards = [
   {
