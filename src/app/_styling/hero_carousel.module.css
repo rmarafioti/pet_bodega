@@ -46,8 +46,11 @@
 }
 
 @media (max-width: 667px) {
-  .modal,
-  .modal[open] {
-    display: none;
-  }
+  .prev_button {
+  left: -10px;
+}
+
+.next_button {
+  right: -10px;
+}
 }

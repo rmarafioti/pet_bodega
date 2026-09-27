@@ -180,15 +180,12 @@
     margin-top: 0.5rem;
   }
 
-  .info_section {
-    width: 100vw;
-  }
-
   .info_card {
     flex-direction: column;
     justify-content: left;
     align-items: flex-start;
     margin-bottom: 4rem;
+    padding-left: 1rem;
   }
 
   .info_card:nth-child(even) {
@@ -197,7 +194,7 @@
   }
 
   .copy {
-    width: 100vw;
+    width: 90vw;
     padding: 0rem 1rem 0rem 1rem;
     line-height: 1.4;
   }
@@ -213,32 +210,18 @@
     margin-right: 0rem;
   }
 
-  .top_right_review,
-  .bottom_left_review,
-  .bottom_left_review,
-  .review_section_top,
-  .review_section_bottom {
-    width: 100vw;
+  .reviews_header {
+    text-align: center;
   }
 
-  .review_section_top,
-  .review_section_bottom {
+  .reviews {
     flex-direction: column;
   }
 
- .review_section_bottom > p:first-child {
-  color: var(--foreground);
-  background-color: var(--background);
-}
-
- .review_section_bottom > p:last-child {
-  color: var(--background);
-  background-color: var(--foreground);
-}
-}
-
-@media (min-width: 1600px) {
-  .hero_tag {
-    top: 820px;
+  .reviews p {
+    padding-bottom: 2rem;
+  }
+  .reviews p:last-child {
+    padding-bottom: 0rem;
   }
 }

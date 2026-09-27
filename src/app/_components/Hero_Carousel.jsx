@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Responsive_Image_Layout from "./Responsive_Image_Layout";
 import { heroCarousel } from "../_data/photos";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
@@ -14,6 +15,7 @@ export default function Hero_Carousel({
   onPrev,
   currentImageObj,
   currentIndex,
+  photos,
 }) {
   const handleKeyDown = (e) => {
     if (e.key === "ArrowRight") onNext();
@@ -22,14 +24,9 @@ export default function Hero_Carousel({
 
   return (
     <div onKeyDown={handleKeyDown} className={styles.section}>
-      <Image
-        id={currentImageObj.id}
-        src={currentImageObj.desktop.src}
-        alt={currentImageObj.alt}
-        width={currentImageObj.desktop.width}
-        height={currentImageObj.desktop.height}
+      <Responsive_Image_Layout
+        photoData={currentImageObj}
         className={styles.photo}
-        priority
       />
       <button
         type="button"

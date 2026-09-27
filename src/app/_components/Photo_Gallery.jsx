@@ -41,6 +41,7 @@ export default function Photo_Gallery() {
             alt={alt}
             key={id}
             onClick={() => openModal(index)}
+            className={styles.photo}
           />
         ))}
       </div>

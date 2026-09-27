@@ -39,3 +39,14 @@ transition: transform 0.5s ease;;
   width: auto;
   cursor: pointer;
 }
+
+@media (max-width: 667px) {
+  .gallery_container {
+    width: 100vw;
+  }
+
+  .picture {
+    width: 140px;
+    height:auto
+  }
+}
