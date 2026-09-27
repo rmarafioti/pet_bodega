@@ -5,6 +5,13 @@ export const navBarDogOne = {
   alt: "...",
 };
 
+export const navBarMobileDogTwo = {
+  src: "https://res.cloudinary.com/dzpne110u/image/upload/v1779634088/pet_bodega/assets/pattern%20icons/bambino_head_darkBG_tr87as.svg",
+  height: 155,
+  width: 156,
+  alt: "...",
+};
+
 export const two_box_header = {
   src: "https://res.cloudinary.com/dzpne110u/image/upload/v1780937547/pet_bodega/assets/6-8-26/2box_header_ez2a1p.svg",
   height: 124,
@@ -26,36 +33,15 @@ export const boneIcon = {
   alt: "...",
 };
 
-export const navBarMobileDogTwo = {
-  src: "https://res.cloudinary.com/dzpne110u/image/upload/v1779634088/pet_bodega/assets/pattern%20icons/bambino_head_darkBG_tr87as.svg",
-  height: 155,
-  width: 156,
-  alt: "...",
-};
-
 export const heroPhoto = {
   alt: "...",
   desktop: {
-    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1781476464/interior_v2_thxacu.jpg",
-    height: 447,
-    width: 1440,
+    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790191045/pet_bodega/assets/9-22-26/carousel%20images/carousel_01_desktop_r2xh8l.jpg",
+    width: 2560,
+    height: 1000,
   },
   mobile: {
     src: "https://res.cloudinary.com/dzpne110u/image/upload/v1782344349/interior_mobile_qz9wai.png",
-    height: 447,
-    width: 528,
-  },
-};
-
-export const businessExterior = {
-  alt: "...",
-  desktop: {
-    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1778270976/pet_bodega/assets/exterior_FPO_ayypd5.jpg",
-    height: 447,
-    width: 1440,
-  },
-  mobile: {
-    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1779639379/pet_bodega/assets/exterior_mobile_t3cpis.png",
     height: 447,
     width: 528,
   },
@@ -125,58 +111,130 @@ export const dogBookEndTwo = {
 export const pictureFrames = [
   {
     id: 1,
-    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1782335904/pet_bodega/assets/revised%20picture%20frames/frame_02_zpzxrg.png",
-    height: 943,
-    width: 670,
     alt: "...",
+    thumbnail: {
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790110734/pet_bodega/assets/9-22-26/dog%20pics/dog_01_frame_pm4uv1.png",
+      width: 844,
+      height: 975,
+    },
+    enlarged: {
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790110736/pet_bodega/assets/9-22-26/dog%20pics/dog_01_uaasbh.jpg",
+      width: 900,
+      height: 900,
+      name: "name here",
+      breed: "breed here",
+    },
   },
   {
     id: 2,
-    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1782335904/pet_bodega/assets/revised%20picture%20frames/frame_01_ctb8pw.png",
-    height: 1167,
-    width: 925,
     alt: "...",
+    thumbnail: {
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790110735/pet_bodega/assets/9-22-26/dog%20pics/dog_03_frame_khsh7j.png",
+      width: 822,
+      height: 822,
+    },
+    enlarged: {
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790110738/pet_bodega/assets/9-22-26/dog%20pics/dog_03_awount.jpg",
+      width: 900,
+      height: 900,
+      name: "name here",
+      breed: "breed here",
+    },
   },
   {
     id: 3,
-    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1782335904/pet_bodega/assets/revised%20picture%20frames/frame_08_lg8blx.png",
-    height: 975,
-    width: 844,
     alt: "...",
+    thumbnail: {
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790110739/pet_bodega/assets/9-22-26/dog%20pics/dog_08_frame_c3myew.png",
+      width: 983,
+      height: 1163,
+    },
+    enlarged: {
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790110741/pet_bodega/assets/9-22-26/dog%20pics/dog_08_on4sqx.jpg",
+      width: 900,
+      height: 900,
+      name: "name here",
+      breed: "breed here",
+    },
   },
   {
     id: 4,
-    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1782335903/pet_bodega/assets/revised%20picture%20frames/frame_06_ajgxpd.png",
-    height: 1163,
-    width: 983,
     alt: "...",
+    thumbnail: {
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790110735/pet_bodega/assets/9-22-26/dog%20pics/dog_02_frame_vy9jfi.png",
+      width: 986,
+      height: 833,
+    },
+    enlarged: {
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790110736/pet_bodega/assets/9-22-26/dog%20pics/dog_02_ob9g3a.jpg",
+      width: 999,
+      height: 999,
+      name: "name here",
+      breed: "breed here",
+    },
   },
   {
     id: 5,
-    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1782335903/pet_bodega/assets/revised%20picture%20frames/frame_07_kbiqo7.png",
-    height: 823,
-    width: 975,
     alt: "...",
+    thumbnail: {
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790110737/pet_bodega/assets/9-22-26/dog%20pics/dog_05_frame_rsrlno.png",
+      width: 680,
+      height: 953,
+    },
+    enlarged: {
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790110739/pet_bodega/assets/9-22-26/dog%20pics/dog_05_kqr4gt.jpg",
+      width: 900,
+      height: 900,
+      name: "name here",
+      breed: "breed here",
+    },
   },
   {
     id: 6,
-    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1782335902/pet_bodega/assets/revised%20picture%20frames/frame_05_vzatr6.png",
-    height: 1205,
-    width: 974,
     alt: "...",
+    thumbnail: {
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790110738/pet_bodega/assets/9-22-26/dog%20pics/dog_07_frame_sfjwp4.png",
+      width: 974,
+      height: 1206,
+    },
+    enlarged: {
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790110740/pet_bodega/assets/9-22-26/dog%20pics/dog_07_pawmr1.jpg",
+      width: 900,
+      height: 900,
+      name: "name here",
+      breed: "breed here",
+    },
   },
   {
     id: 7,
-    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1782335902/pet_bodega/assets/revised%20picture%20frames/frame_03_shxufh.png",
-    height: 816,
-    width: 816,
     alt: "...",
+    thumbnail: {
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790110735/pet_bodega/assets/9-22-26/dog%20pics/dog_04_frame_pcklen.png",
+      width: 1167,
+      height: 925,
+    },
+    enlarged: {
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790110739/pet_bodega/assets/9-22-26/dog%20pics/dog_04_l1tzsp.jpg",
+      width: 900,
+      height: 900,
+      name: "name here",
+      breed: "breed here",
+    },
   },
   {
     id: 8,
-    src: "https://res.cloudinary.com/dzpne110u/image/upload/v1782335902/pet_bodega/assets/revised%20picture%20frames/frame_04_ypblbm.png",
-    height: 993,
-    width: 915,
     alt: "...",
+    thumbnail: {
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790110737/pet_bodega/assets/9-22-26/dog%20pics/dog_06_frame_rg2zmd.png",
+      width: 915,
+      height: 993,
+    },
+    enlarged: {
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790110740/pet_bodega/assets/9-22-26/dog%20pics/dog_06_avzc0f.jpg",
+      height: 900,
+      width: 900,
+      name: "name here",
+      breed: "breed here",
+    },
   },
 ];

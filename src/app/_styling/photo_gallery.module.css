@@ -4,13 +4,38 @@
   align-items: center;
   flex-wrap: wrap;
 
-  padding: 6rem 0rem 6rem 0rem;
-  width: 100vw;
+  padding: 2rem 0rem 2rem 0rem;
+  width: 1000px;
   background-color: var(--background);
 }
 
+.photo_container:nth-child(n) {
+transition: transform 0.5s ease;;
+}
+
+.photo_container:nth-child(1):hover {
+  transform: rotate(5deg); 
+}
+
+.photo_container:nth-child(2):hover {
+  transform: rotate(-5deg); 
+}
+
+.photo_container:nth-child(4):hover {
+  transform: rotate(2deg); 
+}
+
+.photo_container:nth-child(6):hover {
+  transform: rotate(-4deg); 
+}
+
+.photo_container:nth-child(7):hover {
+  transform: rotate(5deg); 
+}
+
 .picture {
-  margin: 2rem;
-  height: 340px;
+  margin: 1rem;
+  height: 200px;
   width: auto;
+  cursor: pointer;
 }

@@ -48,11 +48,6 @@ button {
   font-size: 1em;
 }
 
-/* accessibility font style */
-.accessible-font {
-  font-family: Arial, Verdana, sans-serif;
-}
-
 a {
   color: inherit;
 }
@@ -83,7 +78,7 @@ main {
   animation: fadeIn 2s ease-in-out;
   width: 100%;
   min-height: 100vh;
-  padding: 15.6rem 1rem 0rem 1rem;
+  padding: 6rem 1rem 0rem 1rem;
 }
 
 section {
