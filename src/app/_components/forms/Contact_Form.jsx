@@ -95,7 +95,7 @@ export default function Contact_Form() {
 
   return (
     <article className={styles.contact_form_container} id="contact_us">
-      <h3 className={styles.header}>Contact Us</h3>
+      <h3 className={styles.header}>Send us a message!</h3>
       <form ref={formRef} onSubmit={sendEmail}>
         <label className={styles.label}>Full name*</label>
         <input

@@ -65,9 +65,7 @@ export const infoCards = [
   {
     id: 1,
     header: "Food & Supplies",
-    copy: "Feeding the “right” food to your pet can feel overwhelming, our goal is to streamline this process and help you make the best choice for your pet and lifestyle. We carry a variety of raw, freeze-dried and kibble diets for dogs and cats.  While we are huge advocates of the raw diet, we do like to meet our clients and their pets where they are in their food journey.",
-    copy_two:
-      "We carry supplies such as leashes, collars, harnesses and grooming tools to keep your pet safe and taken care of at home.",
+    copy: "Feeding the “right” food to your pet can feel overwhelming. Our goal is to streamline this process and help you make the best choice for your pet and lifestyle. We carry a variety of raw, freeze-dried and kibble diets for dogs and cats. We also carry supplies such as leashes, collars, harnesses and grooming tools to keep your pet safe and taken care of at home.",
     icon: {
       src: "https://res.cloudinary.com/dzpne110u/image/upload/v1779117498/pet_bodega/assets/5-18-26/bowl_white_pyrrec.svg",
       height: 118,
@@ -77,10 +75,8 @@ export const infoCards = [
   },
   {
     id: 2,
-    header: "Treats, Chews & Toys",
-    copy: "Want to ward off plaque and keep your pet mentally stimulated all while boosting their nutrition? We have that covered! Our primary focus for treats and chews is to keep things clean and simple.  Single ingredient, well sourced and chocked full of nutrients is our standard! Most of our chews and treats are great for multi species households as both dogs and cats can enjoy them!  We offer a collagen chew bar and freeze-dried bar that is designed for functional chewing.",
-    copy_two:
-      "Our toy selection is always changing and has something for everyone.  We carry toys that are durable, interactive and just plain fun.",
+    header: "Treats & Toys",
+    copy: "Our primary focus for treats and chews is to keep things clean and simple. Single ingredient, well sourced and chocked full of nutrients is our standard! Most of our chews and treats are great for multi species households as both dogs and cats can enjoy them! We offer a collagen chew bar and freeze-dried bar that is designed for functional chewing. Our toy selection is always changing and has something for everyone.",
     icon: {
       src: "https://res.cloudinary.com/dzpne110u/image/upload/v1779117497/pet_bodega/assets/5-18-26/treat_white_tmiagy.svg",
       height: 156,
@@ -91,7 +87,7 @@ export const infoCards = [
   {
     id: 3,
     header: "Grooming",
-    copy: "We pride ourselves on providing a unique one-on-one experience customized to the dog we are servicing.  We value quality over quantity and believe this philosophy creates the safest, calmest experience a grooming salon can offer.  We use quality products tailored to your pet’s specific needs and desired outcomes.  Humanity over vanity is something we always stand by and will never compromise a dog's safety or wellbeing for a haircut.",
+    copy: "We provide a unique 1-on-1 experience customized to the dog we are servicing. We value quality over quantity and believe this philosophy creates the safest, calmest experience a grooming salon can offer. We use quality products tailored to your pet’s specific needs and desired outcomes. Humanity over vanity is something we stand by and will never compromise a dog's safety or wellbeing for a haircut.",
     icon: {
       src: "https://res.cloudinary.com/dzpne110u/image/upload/v1779117497/pet_bodega/assets/5-18-26/shears_white_orkpx7.svg",
       height: 210,
@@ -102,9 +98,7 @@ export const infoCards = [
   {
     id: 4,
     header: "Self-wash",
-    copy: "Want a clean pup STAT? Our self wash is available within our grooming room.  We provide professional shampoo, high velocity dryers, towels and brushes.  Add a nail trim to your self wash for a discounted price!",
-    copy_two:
-      "In addition to our self washes we offer a variety of walk-in services like nail trims, pad care, face trims, sanitary trims and more!",
+    copy: "Want a clean pup STAT? Our self wash is available within our grooming room. We provide professional shampoo, high velocity dryers, towels and brushes. Add a nail trim to your self wash for a discounted price! In addition to our self washes we offer a variety of walk-in services like nail trims, pad care, face trims, sanitary trims and more!",
     icon: {
       src: "https://res.cloudinary.com/dzpne110u/image/upload/v1779117499/pet_bodega/assets/5-18-26/bubbles_white_qgcvmh.svg",
       height: 217,

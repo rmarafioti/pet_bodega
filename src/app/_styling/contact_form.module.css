@@ -1,12 +1,13 @@
 .contact_form_container {
   margin: 0rem 0rem 4rem 0rem;
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 
 .header {
   font-family: var(--main-font);
   text-transform: uppercase;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .label,
