@@ -7,8 +7,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-  --dm_background: #3b3840;
+  --foreground: #000000;
 
   --main-font: "dinosaurBold", serif;
   --copy-light: "rocGroteskLight", serif;

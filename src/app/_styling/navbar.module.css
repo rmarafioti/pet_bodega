@@ -16,13 +16,18 @@
 }
 
 .two_box_header {
-  height: 160px;
+  height: 70px;
+  width: auto;
+}
+
+.one_box_header {
+  height: 38px;
   width: auto;
 }
 
 .dog_icon_right,
 .dog_icon_left {
-  height: 100px;
+  height: 48px;
   width: auto;
   margin: 0rem 1rem 0rem 0.5rem;
 }
@@ -33,34 +38,35 @@
 
 .title,
 .title_small {
-  font-size: 60px;
+  font-size: 30px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   white-space: nowrap;
 }
 
 .title_small {
-  font-size: 40px;
-  padding: 0rem 1rem 0.4rem 1rem;
+  font-size: 24px;
+  padding: 0rem 1rem 0rem 1rem;
 }
 
 .info_container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0rem 0rem 2rem 0rem;
+  line-height: 24px;
 }
 
 .information {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 10px;
+  font-weight: bold;
   font-family: var(--copy-light);
 }
 
 .bone_icon {
-  margin: 0rem 1rem 0rem 1rem;
+  height: 16px;
 }
 
 .link_container {
@@ -69,8 +75,8 @@
   justify-content: center;
   text-transform: uppercase;
   color: var(--background);
-  background-color: rgba(23, 23, 23, 0.95);
-  padding: 1.5rem;
+  background-color: var(--foreground);
+  padding: .5rem;
   width: 100vw;
 }
 
@@ -79,10 +85,12 @@
   align-items: center;
 }
 
-.nav_link {
+.nav_link,
+.phone_number,
+.ig_link {
   text-decoration: none;
-  font-size: 24px;
-  padding: 0rem 1rem 0rem 1rem;
+  font-size: 10px;
+  padding: 0rem .5rem 0rem .5rem;
 }
 
 .small_nav_container {

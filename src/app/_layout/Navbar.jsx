@@ -54,9 +54,9 @@ export default function Navbar() {
   }
 
   const links = [
-    { href: "/AboutUs", label: "about us" },
-    { href: "/OurTeam", label: "meet our team" },
-    { href: "/#contact_us", label: "contact us" },
+    /*{ href: "/AboutUs", label: "call us" },*/
+    { href: "/#contact_us", label: "send us a message" },
+    /*{ href: "/OurTeam", label: "instagram" },*/
   ];
 
   return (
@@ -84,7 +84,7 @@ export default function Navbar() {
             <div className={pc.info_container}>
               <p className={pc.title}>The Pet Bodega</p>
               <p className={pc.information}>
-                Grooming in Mount Prospect, IL Since 2021
+                Grooming in Mount Prospect, IL Since 2005
               </p>
             </div>
             <Image
@@ -103,6 +103,16 @@ export default function Navbar() {
             />
           </Link>
           <div className={pc.link_container}>
+            <a href="tel:+18472228005" className={pc.phone_number}>
+              Call us
+            </a>
+            <Image
+              src={boneIcon.src}
+              height={boneIcon.height}
+              width={boneIcon.width}
+              alt={boneIcon.alt}
+              className={pc.bone_icon}
+            />
             {links
               .filter((link) => link.href)
               .map(({ href, label }, index, array) => (
@@ -114,7 +124,7 @@ export default function Navbar() {
                   >
                     {label}
                   </Link>
-                  {index < array.length - 1 && (
+                  {/*{index < array.length - 1 && (
                     <Image
                       src={boneIcon.src}
                       height={boneIcon.height}
@@ -122,9 +132,24 @@ export default function Navbar() {
                       alt={boneIcon.alt}
                       className={pc.bone_icon}
                     />
-                  )}
+                  )}*/}
                 </span>
               ))}
+            <Image
+              src={boneIcon.src}
+              height={boneIcon.height}
+              width={boneIcon.width}
+              alt={boneIcon.alt}
+              className={pc.bone_icon}
+            />
+            <a
+              href="https://www.instagram.com/the.pet.bodega/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={pc.ig_link}
+            >
+              Instagram
+            </a>
           </div>
         </div>
 
@@ -151,6 +176,16 @@ export default function Navbar() {
             />
           </Link>
           <div className={pc.link_container}>
+            <a href="tel:+18472228005" className={pc.phone_number}>
+              Call us
+            </a>
+            <Image
+              src={boneIcon.src}
+              height={boneIcon.height}
+              width={boneIcon.width}
+              alt={boneIcon.alt}
+              className={pc.bone_icon}
+            />
             {links
               .filter((link) => link.href)
               .map(({ href, label }, index, array) => (
@@ -158,7 +193,7 @@ export default function Navbar() {
                   <Link key={href} href={href} className={pc.nav_link}>
                     {label}
                   </Link>
-                  {index < array.length - 1 && (
+                  {/*{index < array.length - 1 && (
                     <Image
                       src={boneIcon.src}
                       height={boneIcon.height}
@@ -166,7 +201,22 @@ export default function Navbar() {
                       alt={boneIcon.alt}
                       className={pc.bone_icon}
                     />
-                  )}
+                  )}*/}
+                  <Image
+                    src={boneIcon.src}
+                    height={boneIcon.height}
+                    width={boneIcon.width}
+                    alt={boneIcon.alt}
+                    className={pc.bone_icon}
+                  />
+                  <a
+                    href="https://www.instagram.com/the.pet.bodega/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={pc.ig_link}
+                  >
+                    Instagram
+                  </a>
                 </span>
               ))}
           </div>
