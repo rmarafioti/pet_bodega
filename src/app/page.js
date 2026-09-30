@@ -75,7 +75,7 @@ export default function Home() {
       </div>
       <Photo_Gallery />
       <div className={styles.review_section}>
-        <h2 className={styles.reviews_header}>Bodega Dog Parents Say...</h2>
+        <h2 className={styles.reviews_header}>Bodega Dog Owners Say</h2>
         <div className={styles.reviews}>
           <p>
             “My dog came out looking so dapper and handsome, with his coat soft
