@@ -74,26 +74,28 @@ export default function Navbar() {
               alt={two_box_header.alt}
               className={pc.two_box_header}
             />
-            <Image
-              src={dogBookEndOne.src}
-              height={dogBookEndOne.height}
-              width={dogBookEndOne.width}
-              alt={dogBookEndOne.alt}
-              className={pc.dog_icon_left}
-            />
-            <div className={pc.info_container}>
-              <p className={pc.title}>The Pet Bodega</p>
-              <p className={pc.information}>
-                Grooming in Mount Prospect, IL Since 2005
-              </p>
+            <div className={pc.lock_up_container}>
+              <Image
+                src={dogBookEndOne.src}
+                height={dogBookEndOne.height}
+                width={dogBookEndOne.width}
+                alt={dogBookEndOne.alt}
+                className={pc.dog_icon_left}
+              />
+              <div className={pc.info_container}>
+                <p className={pc.title}>The Pet Bodega</p>
+                <p className={pc.information}>
+                  Family Owned in Mount Prospect, IL Since 2005
+                </p>
+              </div>
+              <Image
+                src={dogBookEndTwo.src}
+                height={dogBookEndTwo.height}
+                width={dogBookEndTwo.width}
+                alt={dogBookEndTwo.alt}
+                className={pc.dog_icon_right}
+              />
             </div>
-            <Image
-              src={dogBookEndTwo.src}
-              height={dogBookEndTwo.height}
-              width={dogBookEndTwo.width}
-              alt={dogBookEndTwo.alt}
-              className={pc.dog_icon_right}
-            />
             <Image
               src={two_box_header.src}
               height={two_box_header.height}

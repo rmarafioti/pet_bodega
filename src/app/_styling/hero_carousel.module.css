@@ -42,7 +42,7 @@
 }
 
 .indicator.active {
-  color: #ecd5cd;
+  color: var(--background);
 }
 
 @media (max-width: 667px) {

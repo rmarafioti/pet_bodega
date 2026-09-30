@@ -24,6 +24,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  height: 675px;
+  width: 675px;
 }
 
 .section {
@@ -63,10 +65,10 @@
   position: absolute;
   cursor: pointer;
   font-size: 24px;
-  top: 2%;
-  transform: translateY(-2%);
-  right: 4%;
-  transform: translateX(-4%);
+  top: 12%;
+  transform: translateY(-12%);
+  right: 17%;
+  transform: translateX(-17%);
   padding-bottom: 0.25rem;
   border-radius: 50px;
   width: 48px;
