@@ -8,7 +8,7 @@ import styles from "../_styling/dog_icons.module.css";
 
 export default function DogIcons() {
   return (
-    <div>
+    <div className={styles.dog_wrapper}>
       <Image
         src={dogBookEndOne.src}
         height={dogBookEndOne.height}

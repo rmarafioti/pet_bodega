@@ -26,6 +26,13 @@
   font-size: 28.5px;
   line-height: 40px;
   text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+
+.ig_link:hover,
+.phone_number:hover,
+.google_link:hover {
+  color: red;
 }
 
 .name {

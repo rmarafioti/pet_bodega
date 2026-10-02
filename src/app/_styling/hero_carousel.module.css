@@ -32,6 +32,7 @@
 }
 
 .indicators {
+  color: red;
   position: absolute;
   display: flex;
   font-size: 10px;

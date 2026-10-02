@@ -47,13 +47,6 @@ export default function Home() {
         onPrev={handlePrev}
         onNext={handleNext}
       />
-      <div className={styles.copy_section} id={styles.tag_line}>
-        <p>
-          Come for the bath, Stay
-          <br />
-          For the vibes.
-        </p>
-      </div>
       <div className={styles.copy_section} id={styles.copy_section_blk}>
         <div className={styles.info_headline}>
           <h2 className={styles.info_header}>We have the</h2>
@@ -75,7 +68,7 @@ export default function Home() {
       </div>
       <Photo_Gallery />
       <div className={styles.review_section}>
-        <h2 className={styles.reviews_header}>Bodega Dog Owners Say</h2>
+        <h2 className={styles.reviews_header}>Bodega Pet Owners Say</h2>
         <div className={styles.reviews}>
           <p>
             “My dog came out looking so dapper and handsome, with his coat soft

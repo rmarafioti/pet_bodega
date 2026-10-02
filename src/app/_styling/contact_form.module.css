@@ -8,9 +8,12 @@
 .header {
   font-size: 80px;
   font-family: var(--main-font);
+  color: var(--background);
   text-transform: uppercase;
   margin-bottom: 2rem;
   text-align: center;
+  -webkit-text-stroke: 2px var(--foreground);
+  text-shadow: 4px 4px 0px red;
 }
 
 .label,
@@ -41,15 +44,16 @@
   font-weight: 600;
   color: var(--background);
   text-align: center;
-  background-color: rgba(23, 23, 23, 0.8);
+  background-color: var(--foreground);
   padding: 0.8rem 0.5rem 0.8rem 0.5rem;
   border: none;
   cursor: pointer;
-  transition: background 0.2s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .send:hover {
-  background-color: var(--foreground);
+  color: var(--foreground);
+  background-color: red;
 }
 
 .required_error {
@@ -79,13 +83,13 @@
   align-self: flex-end;
   height: 42px;
   border: 2px solid var(--foreground);
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 
   cursor: pointer;
 }
 
 .close_button {
-font-size: 38px;
+  font-size: 38px;
 }
 
 .dialog::backdrop {

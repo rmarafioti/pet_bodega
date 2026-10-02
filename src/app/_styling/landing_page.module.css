@@ -19,13 +19,6 @@
   width: 100vw;
 }
 
-#tag_line {
-  font-family: var(--main-font);
-  font-size: 80px;
-  line-height: 80px;
-  text-transform: uppercase;
-}
-
 .info_headline {
   display: flex;
   justify-content: center;
@@ -43,6 +36,8 @@
 .info_header {
   font-size: 80px;
   margin-bottom: 6rem;
+  text-shadow: 4px 4px 0px red;
+  -webkit-text-stroke: 2px var(--foreground);
 }
 
 .dog_icon {
@@ -129,6 +124,8 @@
   font-family: var(--main-font);
   font-size: 80px;
   text-transform: uppercase;
+  text-shadow: 4px 4px 0px red;
+  -webkit-text-stroke: 2px var(--foreground);
 }
 
 .reviews {
@@ -154,7 +151,6 @@
     padding: 2rem 0rem 2rem 0rem;
   }
 
-  #tag_line > p,
   .ig_link {
     font-size: 28px;
   }

@@ -1,33 +1,27 @@
+.dog_wrapper {
+  display: contents;
+}
+
 .dog_icon_left,
 .dog_icon_right {
   position: fixed;
   height: 220px;
   width: auto;
-  top: 560px;
+  top: 96%;
+  transform: translateY(-96%);
+  pointer-events: none;
   z-index: 1001;
 }
 
 .dog_icon_left {
-  left: 10px;
-  top: 520px;
+  left: 20;
 }
 
 .dog_icon_right {
-  right: -10px;
-  top: 500px;
+  right: 20;
 }
 
-@media (min-width: 1600px) {
-  .dog_icon_left,
-  .dog_icon_right {
-    height: 300px;
-    width: auto;
-    top: 840px;
-    z-index: 1001;
-  }
-}
-
-@media (max-width: 667px) {
+@media (max-width: 1380px) {
   .dog_icon_left,
   .dog_icon_right {
     display: none;

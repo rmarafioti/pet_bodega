@@ -1,3 +1,26 @@
+.copy_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--main-font);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2rem 0rem 2rem 0rem;
+  width: 100vw;
+}
+
+#tag_line {
+  font-family: var(--main-font);
+  color: var(--background);
+  font-size: 80px;
+  line-height: 80px;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px var(--foreground);
+}
+
+#tag_line p {
+  text-shadow: 4px 4px 0px red;
+}
 .gallery_container {
   display: flex;
   justify-content: center;
@@ -10,39 +33,39 @@
 }
 
 .photo_container:nth-child(n) {
-transition: transform 0.5s ease;;
+  transition: transform 0.5s ease;
 }
 
 .photo_container:nth-child(1):hover {
-  transform: rotate(5deg); 
+  transform: rotate(5deg);
 }
 
 .photo_container:nth-child(2):hover {
-  transform: rotate(-5deg); 
+  transform: rotate(-5deg);
 }
 
 .photo_container:nth-child(3):hover {
-  transform: rotate(10deg); 
+  transform: rotate(10deg);
 }
 
 .photo_container:nth-child(4):hover {
-  transform: rotate(2deg); 
+  transform: rotate(2deg);
 }
 
 .photo_container:nth-child(5):hover {
-  transform: rotate(10deg); 
+  transform: rotate(10deg);
 }
 
 .photo_container:nth-child(6):hover {
-  transform: rotate(-4deg); 
+  transform: rotate(-4deg);
 }
 
 .photo_container:nth-child(7):hover {
-  transform: rotate(5deg); 
+  transform: rotate(5deg);
 }
 
 .photo_container:nth-child(8):hover {
-  transform: rotate(-10deg); 
+  transform: rotate(-10deg);
 }
 
 .picture {
@@ -59,6 +82,6 @@ transition: transform 0.5s ease;;
 
   .picture {
     width: 140px;
-    height:auto
+    height: auto;
   }
 }

@@ -30,7 +30,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className={styles.ig_link}
           >
-            @the.pet.bodgea
+            @the.pet.bodegea
           </a>
         </div>
         <div className={styles.hours}>

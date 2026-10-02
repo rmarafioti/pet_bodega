@@ -34,6 +34,13 @@ export default function Photo_Gallery() {
 
   return (
     <>
+      <div className={styles.copy_section} id={styles.tag_line}>
+        <p>
+          Come for the bath, Stay
+          <br />
+          For the vibes.
+        </p>
+      </div>
       <div className={styles.gallery_container}>
         {pictureFrames.map(({ id, alt, thumbnail }, index) => (
           <Photo_Card

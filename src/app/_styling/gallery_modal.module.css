@@ -61,7 +61,7 @@
 }
 
 .closeButton {
-  font-family: var(--copy-light);
+  /*font-family: var(--copy-light);
   position: absolute;
   cursor: pointer;
   font-size: 24px;
@@ -74,6 +74,34 @@
   width: 48px;
   background: transparent;
 
+  color: var(--background);
+  background: var(--foreground);*/
+
+  position: absolute;
+  top: 12%;
+  right: calc(17% + 8px); /* 8px matches your old translateX(-17%) on a 48px button */
+
+  /* reset browser/OS button defaults */
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 0.25rem;
+  border: none;
+  box-sizing: border-box;
+
+  /* fixed size so font metrics can't change it */
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+
+  /* center the × regardless of font */
+  display: grid;
+  place-items: center;
+  line-height: 1;
+
+  font-family: var(--copy-light), Arial, sans-serif;
+  font-size: 24px;
+  cursor: pointer;
   color: var(--background);
   background: var(--foreground);
 }
