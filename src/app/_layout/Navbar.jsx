@@ -217,7 +217,7 @@ export default function Navbar() {
                     rel="noopener noreferrer"
                     className={pc.ig_link}
                   >
-                    Instagram
+                    Social
                   </a>
                 </span>
               ))}
