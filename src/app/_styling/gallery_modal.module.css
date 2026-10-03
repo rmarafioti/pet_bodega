@@ -29,6 +29,7 @@
 }
 
 .section {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,31 +62,15 @@
 }
 
 .closeButton {
-  /*font-family: var(--copy-light);
   position: absolute;
-  cursor: pointer;
-  font-size: 24px;
-  top: 12%;
-  transform: translateY(-12%);
-  right: 17%;
-  transform: translateX(-17%);
-  padding-bottom: 0.25rem;
-  border-radius: 50px;
-  width: 48px;
-  background: transparent;
-
-  color: var(--background);
-  background: var(--foreground);*/
-
-  position: absolute;
-  top: 12%;
-  right: calc(17% + 8px); /* 8px matches your old translateX(-17%) on a 48px button */
+  top: 12px;
+  right: 12px;
 
   /* reset browser/OS button defaults */
   appearance: none;
   margin: 0;
   padding: 0;
-  padding-top: 0.25rem;
+  padding-top: 5px;
   border: none;
   box-sizing: border-box;
 
@@ -94,7 +79,7 @@
   height: 48px;
   border-radius: 50%;
 
-  /* center the × regardless of font */
+  /* center the X regardless of font */
   display: grid;
   place-items: center;
   line-height: 1;

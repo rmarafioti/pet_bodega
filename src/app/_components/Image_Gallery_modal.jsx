@@ -41,6 +41,14 @@ export default function Gallery_Modal({ isOpen, closeModal, currentImageObj }) {
             className={styles.photo}
             priority
           />
+          <button
+            type="button"
+            onClick={closeModal}
+            className={styles.closeButton}
+            aria-label="close modal"
+          >
+            X
+          </button>
           <div className={styles.stats}>
             <div className={styles.stat}>
               <p className={styles.stat_key}>Name:</p>
@@ -52,14 +60,6 @@ export default function Gallery_Modal({ isOpen, closeModal, currentImageObj }) {
             </div>
           </div>
         </div>
-        <button
-          type="button"
-          onClick={closeModal}
-          className={styles.closeButton}
-          aria-label="close modal"
-        >
-          X
-        </button>
       </div>
     </dialog>
   );
