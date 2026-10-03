@@ -260,7 +260,7 @@ export const pictureFrames = [
       height: 925,
     },
     enlarged: {
-      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790110739/pet_bodega/assets/9-22-26/dog%20pics/dog_04_l1tzsp.jpg",
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1791039737/pet_bodega/assets/10-3-26/dog%20images%20full%20set/dog_04_xq18xz.jpg",
       width: 900,
       height: 900,
       name: "Maya",
