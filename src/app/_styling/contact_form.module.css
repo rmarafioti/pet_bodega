@@ -96,22 +96,28 @@
   background: rgba(0, 0, 0, 0.8);
 }
 
-@media (max-width: 667px) and (hover: none) {
+@media (max-width: 667px) {
   .contact_form_container {
-    margin: 0rem 0rem 4rem 0rem;
+    margin: 0rem 0rem 2rem 0rem;
   }
-  .sub_header {
-    margin-bottom: 1rem;
+
+  .header {
+    font-size: 48px;
   }
   .name,
   .email,
   .message,
-  .send,
   .sub_header,
   .form {
-    width: 90vw;
+    padding: 0.2rem;
   }
+
   .send {
     text-align: center;
+  }
+
+  .send:hover {
+    color: inherit;
+    background-color: inherit;
   }
 }

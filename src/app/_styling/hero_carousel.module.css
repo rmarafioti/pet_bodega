@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   justify-content: center;
+  touch-action: pan-y;
   width: 100vw;
 }
 
@@ -47,11 +48,24 @@
 }
 
 @media (max-width: 667px) {
-  .prev_button {
-  left: -10px;
+  .prev_button,
+  .next_button {
+    display: none;
+  }
+
+  .track {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* hide scrollbar in Firefox */
 }
 
-.next_button {
-  right: -10px;
+.track::-webkit-scrollbar {
+  display: none; /* hide scrollbar in Chrome/Safari */
 }
+
+.slide {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
 }

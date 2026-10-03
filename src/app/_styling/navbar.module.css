@@ -17,7 +17,6 @@
 
 .lock_up_container {
   display: flex;
-
 }
 
 .two_box_header {
@@ -138,14 +137,80 @@
   display: none;
 }
 
+.hide_until_scroll {
+  display: none;
+}
+
+@media (min-width: 668px) {
+  .hide_on_scroll {
+    display: none; /* base navbar only collapses on desktop */
+  }
+}
+
 @media (max-width: 667px) {
-  .nav_menu,
-  .base_navbar_container,
+  .two_box_header,
+  .one_box_header,
+  .information,
   .small_nav_container {
     display: none;
   }
 
-  .mobile_nav {
+  .base_header {
+    background-color: var(--foreground);
+    padding-top: 1rem;
+  }
+
+  .dog_icon_right,
+  .dog_icon_left {
+    height: 50px;
+  }
+
+  .dog_icon_right {
+    margin-right: 0.5rem;
+  }
+
+  .dog_icon_left {
+    margin-left: 1rem;
+  }
+
+  .title {
+    color: var(--background);
+    font-size: 28px;
+  }
+
+  .link_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: var(--background);
+    background-color: var(--foreground);
+    padding: 1rem;
+    width: 100vw;
+    border-bottom: 4px solid red;
+  }
+
+  .nav_link_group {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav_link,
+  .phone_number,
+  .ig_link {
+    text-decoration: none;
+    font-size: 15px;
+    padding: 0rem .8rem 0rem .8rem;
+    transition: 0.5s ease-in-out;
+  }
+
+  .nav_link:hover,
+  .phone_number:hover,
+  .ig_link:hover {
+    color: inherit;
+  }
+
+  /*.mobile_nav {
     background-color: var(--foreground);
     color: var(--background);
     display: flex;
@@ -162,7 +227,7 @@
 
   /* mobile menu */
 
-  .menu {
+  /*.menu {
     width: 100%;
     background-color: var(--background);
     border-top: 1px solid lightgray;
@@ -175,5 +240,5 @@
     text-align: center;
     height: 39vh;
     z-index: 1000;
-  }
+  }*/
 }

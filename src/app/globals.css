@@ -128,7 +128,7 @@ button {
 }
 
 /* responsive */
-@media (max-width: 667px) {
+@media (max-width: 667px) and (hover: none){
   nav {
     border-bottom: none;
   }
@@ -141,6 +141,6 @@ button {
     padding: 5.6rem 1rem 0rem 1rem;
   }
   form {
-    width: 100%;
+   width: 100%;
   }
 }

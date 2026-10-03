@@ -76,12 +76,20 @@
 }
 
 @media (max-width: 667px) {
+  #tag_line p {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
   .gallery_container {
     width: 100vw;
+    padding-top: 0rem;
   }
 
   .picture {
     width: 140px;
     height: auto;
+    margin: 1rem;
+    margin-top: 0rem;
   }
 }

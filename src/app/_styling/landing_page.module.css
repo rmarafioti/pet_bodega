@@ -157,7 +157,6 @@
 
   .info_headline {
     flex-direction: column;
-    text-align: left;
   }
 
   .info_header {
@@ -165,9 +164,13 @@
     margin-bottom: 0rem;
   }
 
+  #word_space {
+    margin-left: 0rem;
+  }
+
   .best_sh {
     display: flex;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 
   .dog_icon {
@@ -180,7 +183,7 @@
     flex-direction: column;
     justify-content: left;
     align-items: flex-start;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     padding-left: 1rem;
   }
 
@@ -208,15 +211,22 @@
 
   .reviews_header {
     text-align: center;
+    font-size: 48px;
   }
 
   .reviews {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
   }
 
   .reviews p {
     padding-bottom: 2rem;
+    font-size: 20px;
+    line-height: 1.4;
   }
+
   .reviews p:last-child {
     padding-bottom: 0rem;
   }

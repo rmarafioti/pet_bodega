@@ -24,7 +24,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > window.innerHeight * 0.15); // 15% of viewport height
+      setIsScrolled(window.scrollY > window.innerHeight * 0.15);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -63,8 +63,7 @@ export default function Navbar() {
     <>
       <nav>
         <div
-          className={pc.base_navbar_container}
-          style={isScrolled ? { display: "none" } : {}}
+          className={`${pc.base_navbar_container} ${isScrolled ? pc.hide_on_scroll : ""}`}
         >
           <Link href="/" className={pc.base_header}>
             <Image
@@ -157,8 +156,7 @@ export default function Navbar() {
 
         {/* smaller nav bar for desktop view */}
         <div
-          className={pc.small_nav_container}
-          style={!isScrolled ? { display: "none" } : {}}
+          className={`${pc.small_nav_container} ${!isScrolled ? pc.hide_until_scroll : ""}`}
         >
           <Link href="/" className={pc.small_nav_header}>
             <Image
@@ -225,7 +223,7 @@ export default function Navbar() {
         </div>
 
         {/* mobile navigation menu below */}
-        <div className={pc.mobile_nav}>
+        {/*<div className={pc.mobile_nav}>
           <div>
             <Image
               src={navBarMobileDogTwo.src}
@@ -243,15 +241,15 @@ export default function Navbar() {
           {/*<Link href="/" className={pc.nav_link}>
             Home
           </Link>*/}
-          {/*hamburger menu*/}
-          {/*<div id={mobile.hamMenuContainer} onClick={toggleMenu}>
+        {/*hamburger menu*/}
+        {/*<div id={mobile.hamMenuContainer} onClick={toggleMenu}>
             <div
               className={`${mobile.menuButtonBurger} ${
                 menuOpen ? mobile.open : ""
               }`}
             ></div>
-          </div>*/}
-        </div>
+          </div>
+        </div>*/}
       </nav>
 
       {/* mobile menu */}

@@ -2,7 +2,6 @@
   width: auto;
   height: 126px;
   margin-bottom: 2rem;
-  
 }
 
 .info_container {
@@ -87,12 +86,17 @@
     line-height: 26px;
     font-family: var(--copy-light);
   }
+
+  .ig_link:hover,
+  .phone_number:hover,
+  .google_link:hover {
+    color: inherit;
+  }
 }
 
 @media (min-width: 1600px) {
-.footer_banner {
-  width: 100vw;
-  height: auto;
+  .footer_banner {
+    width: 100vw;
+    height: auto;
+  }
 }
-}
-
