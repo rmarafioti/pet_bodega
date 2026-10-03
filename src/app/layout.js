@@ -19,7 +19,7 @@ export const metadata = {
   title: "Pet Bodega",
   description: "SEO business information here",
   icons: {
-    icon: "/favicon.svg",
+    icon: "/faviconpb.svg",
   },
 };
 
