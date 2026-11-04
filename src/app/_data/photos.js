@@ -180,7 +180,7 @@ export const pictureFrames = [
       height: 822,
     },
     enlarged: {
-      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790110738/pet_bodega/assets/9-22-26/dog%20pics/dog_03_awount.jpg",
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1791039739/pet_bodega/assets/10-3-26/dog%20images%20full%20set/dog_03_kw2wlz.jpg",
       width: 900,
       height: 900,
       name: "Russell",
@@ -212,7 +212,7 @@ export const pictureFrames = [
       height: 833,
     },
     enlarged: {
-      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790110736/pet_bodega/assets/9-22-26/dog%20pics/dog_02_ob9g3a.jpg",
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1791039736/pet_bodega/assets/10-3-26/dog%20images%20full%20set/dog_02_q8uo0u.jpg",
       width: 999,
       height: 999,
       name: "Pippa",
@@ -228,7 +228,7 @@ export const pictureFrames = [
       height: 953,
     },
     enlarged: {
-      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790110739/pet_bodega/assets/9-22-26/dog%20pics/dog_05_kqr4gt.jpg",
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1791039740/pet_bodega/assets/10-3-26/dog%20images%20full%20set/dog_05_oyqbcy.jpg",
       width: 900,
       height: 900,
       name: "Frank",
@@ -244,7 +244,7 @@ export const pictureFrames = [
       height: 1206,
     },
     enlarged: {
-      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790110740/pet_bodega/assets/9-22-26/dog%20pics/dog_07_pawmr1.jpg",
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1791039742/pet_bodega/assets/10-3-26/dog%20images%20full%20set/dog_07_hfzm4j.jpg",
       width: 900,
       height: 900,
       name: "Mallow",
