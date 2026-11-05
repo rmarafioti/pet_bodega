@@ -2,6 +2,7 @@
 
 import React, { useRef } from "react";
 import Responsive_Image_Layout from "./Responsive_Image_Layout";
+import useMediaQuery from "../_hooks/useMediaQuery";
 import { heroCarousel } from "../_data/photos";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
@@ -10,6 +11,7 @@ import { FaCircle } from "react-icons/fa6";
 import styles from "../_styling/hero_carousel.module.css";
 
 const SWIPE_THRESHOLD = 50; // px the finger must travel to count as a swipe
+const MOBILE_QUERY = "(max-width: 800px)";
 
 export default function Hero_Carousel({
   onNext,
@@ -18,6 +20,20 @@ export default function Hero_Carousel({
   currentIndex,
 }) {
   const touchStart = useRef({ x: 0, y: 0 });
+  // matches the <picture> breakpoint in Responsive_Image_Layout
+  const isMobile = useMediaQuery(MOBILE_QUERY);
+
+  // only one mobile image exists for now: show the first slide, no swiping/controls
+  if (isMobile) {
+    return (
+      <div className={styles.section}>
+        <Responsive_Image_Layout
+          photoData={heroCarousel[0]}
+          className={styles.photo}
+        />
+      </div>
+    );
+  }
 
   const handleKeyDown = (e) => {
     if (e.key === "ArrowRight") onNext();

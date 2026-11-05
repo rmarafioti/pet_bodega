@@ -39,21 +39,21 @@ export const heroCarousel = [
     id: 1,
     alt: "...",
     desktop: {
-      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790191045/pet_bodega/assets/9-22-26/carousel%20images/carousel_01_desktop_r2xh8l.jpg",
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1793844515/pet_bodega/assets/10-3-26/carousel_01_desktop_r2xh8l_qj6c3s.jpg",
       width: 2560,
       height: 1000,
     },
     mobile: {
-      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790191050/pet_bodega/assets/9-22-26/carousel%20images/carousel_01_mobile_im0woz.jpg",
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790871897/pet_bodega/assets/10-1-26/carousel_03_mobile_rbikcx.jpg",
       width: 3000,
       height: 3000,
     },
   },
-  {
+  /*{
     id: 2,
     alt: "...",
     desktop: {
-      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790191045/pet_bodega/assets/9-22-26/carousel%20images/carousel_02_desktop_lrobmu.jpg",
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1793844605/pet_bodega/assets/10-3-26/carousel_04_desktop_iqtllw_dtbo9f.jpg",
       width: 2560,
       height: 1000,
     },
@@ -62,7 +62,7 @@ export const heroCarousel = [
       width: 3000,
       height: 3000,
     },
-  },
+  },*/
   {
     id: 3,
     alt: "...",
@@ -175,7 +175,7 @@ export const pictureFrames = [
     id: 2,
     alt: "...",
     thumbnail: {
-      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790110735/pet_bodega/assets/9-22-26/dog%20pics/dog_03_frame_khsh7j.png",
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1791039741/pet_bodega/assets/10-3-26/dog%20images%20full%20set/dog_03_frame_slvqn8.png",
       width: 822,
       height: 822,
     },
@@ -207,7 +207,7 @@ export const pictureFrames = [
     id: 4,
     alt: "...",
     thumbnail: {
-      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790110735/pet_bodega/assets/9-22-26/dog%20pics/dog_02_frame_vy9jfi.png",
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1791039737/pet_bodega/assets/10-3-26/dog%20images%20full%20set/dog_02_frame_bjbtke.png",
       width: 986,
       height: 833,
     },
@@ -223,7 +223,7 @@ export const pictureFrames = [
     id: 5,
     alt: "...",
     thumbnail: {
-      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790110737/pet_bodega/assets/9-22-26/dog%20pics/dog_05_frame_rsrlno.png",
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1791039739/pet_bodega/assets/10-3-26/dog%20images%20full%20set/dog_05_frame_bkv7i6.png",
       width: 680,
       height: 953,
     },
@@ -239,7 +239,7 @@ export const pictureFrames = [
     id: 6,
     alt: "...",
     thumbnail: {
-      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1790110738/pet_bodega/assets/9-22-26/dog%20pics/dog_07_frame_sfjwp4.png",
+      src: "https://res.cloudinary.com/dzpne110u/image/upload/v1791039744/pet_bodega/assets/10-3-26/dog%20images%20full%20set/dog_07_frame_idxzky.png",
       width: 974,
       height: 1206,
     },
