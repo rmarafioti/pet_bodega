@@ -75,6 +75,7 @@
 
 .bone_icon {
   height: 32px;
+  width: auto;
 }
 
 .link_container {
